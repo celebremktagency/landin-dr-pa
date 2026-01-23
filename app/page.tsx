@@ -4,6 +4,8 @@ import Image from "next/image";
 import foto1 from './foto1.png';
 import foto2 from './foto2.png';
 import foto3 from './foto3.png';
+import fotoSorrindo from './fotoSorrindo.jpeg';
+import bebeNascendo from './bebeNascendo.jpeg';
 import logo from './Logo.png';
 import { useEffect } from "react";
 import { 
@@ -82,7 +84,7 @@ export default function Home() {
               </button>
             </div>
             <div className="w-full h-96 rounded-2xl border-4 border-[#5D6861] shadow-xl overflow-hidden flex items-center justify-center animate-slide-in-right hover:scale-105 transition-transform duration-500 ease-in-out group bg-white relative">
-              <Image src={foto1} alt="Dr. Pedro Assunção" className="object-cover w-full h-full rounded-lg" fill />
+              <Image src={fotoSorrindo} alt="Dr. Pedro Assunção" className="object-cover w-full h-full rounded-lg" fill />
             </div>
           </div>
         </div>
@@ -275,8 +277,8 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-xl shadow-sm">
-              <div className="w-24 h-24 bg-green-100 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <Users className="w-10 h-10 text-[#5D6861]" />
+              <div className="w-24 h-24 bg-green-100 rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden">
+                <Image src={bebeNascendo} alt="Bebê nascendo" className="object-cover w-full h-full rounded-full" fill />
               </div>
               <div className="flex justify-center gap-1 mb-4">
                 <Star className="w-5 h-5 text-yellow-400 fill-current" />
