@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import foto1 from '..foto1';
-import foto2 from '..foto2';
-import foto3 from '..foto3';
+import foto1 from '../foto1.png';
+import foto2 from '../foto2.png';
+import foto3 from '../foto3.png';
 import logo from '../Logo.png';
 import { useEffect } from "react";
 import { 
@@ -59,7 +59,7 @@ export default function Versao2() {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
               <div className="h-12 flex items-center">
-                <Image src=logo alt="Dr. Pedro Assunção" width={100} height={40} className="object-contain" />
+                <Image src={logo} alt="Dr. Pedro Assunção" width={100} height={40} className="object-contain" />
               </div>
               <div className="hidden md:block">
                 <h1 className="text-xl font-bold text-[#5D6861]">Dr. Pedro Assunção</h1>
@@ -628,7 +628,7 @@ export default function Versao2() {
             {/* Logo e Descrição */}
             <div className="md:col-span-2">
               <div className="h-12 mb-6">
-                <Image src=logo alt="Dr. Pedro Assunção" width={120} height={48} className="object-contain" />
+                <Image src={logo} alt="Dr. Pedro Assunção" width={120} height={48} className="object-contain" />
               </div>
               <p className="text-gray-300 leading-relaxed mb-6">
                 Dr. Pedro Assunção - Especialista em Medicina da Fertilidade. 

@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import foto1 from '..foto1';
-import foto2 from '..foto2';
-import foto3 from '..foto3';
+import foto1 from '../foto1.png';
+import foto2 from '../foto2.png';
+import foto3 from '../foto3.png';
 import logo from '../Logo.png';
 import { useEffect } from "react";
 import { 
@@ -71,7 +71,7 @@ export default function Versao3() {
               <div className="h-14 flex items-center group">
                 <div className="relative">
                   <div className="absolute -inset-2 bg-gradient-to-r from-[#5D6861] to-[#85927D] rounded-xl blur opacity-20 group-hover:opacity-40 transition-opacity duration-300"></div>
-                  <Image src=logo alt="Dr. Pedro Assunção" width={140} height={56} className="relative object-contain max-h-14" />
+                  <Image src={logo} alt="Dr. Pedro Assunção" width={140} height={56} className="relative object-contain max-h-14" />
                 </div>
               </div>
               <div className="hidden lg:block border-l border-gray-200 pl-6">
@@ -816,7 +816,7 @@ export default function Versao3() {
             <div className="lg:col-span-2 space-y-6">
               <div className="flex items-center space-x-4">
                 <div className="h-16 flex items-center">
-                  <Image src=logo alt="Dr. Pedro Assunção" width={120} height={48} className="object-contain" />
+                  <Image src={logo} alt="Dr. Pedro Assunção" width={120} height={48} className="object-contain" />
                 </div>
                 <div className="border-l border-gray-700 pl-4">
                   <h3 className="text-xl font-bold bg-gradient-to-r from-[#5D6861] to-[#85927D] bg-clip-text text-transparent">

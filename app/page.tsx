@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import foto1 from '.foto1';
-import foto2 from '.foto2';
-import foto3 from '.foto3';
+import foto1 from './foto1.png';
+import foto2 from './foto2.png';
+import foto3 from './foto3.png';
 import logo from './Logo.png';
 import { useEffect } from "react";
 import { 
@@ -55,7 +55,7 @@ export default function Home() {
       <header className="bg-white shadow-sm transition-all duration-300 ease-in-out">
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between animate-fade-in">
           <div className="h-16 flex items-center justify-center hover:scale-105 transition-transform duration-300">
-            <Image src=logo alt="Dr. Pedro Assunção" width={120} height={48} className="object-contain max-h-12" />
+            <Image src={logo} alt="Dr. Pedro Assunção" width={120} height={48} className="object-contain max-h-12" />
           </div>
           <button className="bg-[#5D6861] text-white px-6 py-3 rounded-full hover:bg-[#85927D] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out font-medium flex items-center gap-2">
             <Calendar className="w-5 h-5" />
@@ -459,7 +459,7 @@ export default function Home() {
             {/* Logo e Descrição */}
             <div className="text-center md:text-left">
               <div className="h-16 mb-4 flex items-center justify-center md:justify-start">
-                <Image src=logo alt="Dr. Pedro Assunção" width={120} height={48} className="object-contain max-h-12" />
+                <Image src={logo} alt="Dr. Pedro Assunção" width={120} height={48} className="object-contain max-h-12" />
               </div>
               <p className="text-gray-300 leading-relaxed text-sm">
                 Medicina da Fertilidade com cuidado humano e científico para realizar o sonho da maternidade.
