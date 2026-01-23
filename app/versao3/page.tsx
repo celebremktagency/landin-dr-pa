@@ -67,7 +67,7 @@ export default function Versao3() {
               <div className="h-14 flex items-center group">
                 <div className="relative">
                   <div className="absolute -inset-2 bg-gradient-to-r from-[#5D6861] to-[#85927D] rounded-xl blur opacity-20 group-hover:opacity-40 transition-opacity duration-300"></div>
-                  <Image src="/assets/Logo.png" alt="Dr. Pedro Assunção" width={140} height={56} className="relative object-contain max-h-14" />
+                  <Image src="/Logo.png" alt="Dr. Pedro Assunção" width={140} height={56} className="relative object-contain max-h-14" />
                 </div>
               </div>
               <div className="hidden lg:block border-l border-gray-200 pl-6">
@@ -188,7 +188,7 @@ export default function Versao3() {
                   <div className="absolute -inset-6 bg-gradient-to-br from-[#5D6861]/20 to-[#85927D]/20 rounded-3xl blur-2xl"></div>
                   <div className="relative bg-white p-6 rounded-3xl shadow-2xl border border-gray-100">
                     <div className="relative h-[500px] rounded-2xl overflow-hidden">
-                      <Image src="/assets/foto1.png" alt="Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
+                      <Image src="/foto1.png" alt="Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                       
                       {/* Floating Badge */}
@@ -586,7 +586,7 @@ export default function Versao3() {
                   <div className="absolute -inset-8 bg-gradient-to-br from-[#5D6861]/20 to-[#85927D]/20 rounded-3xl blur-3xl"></div>
                   <div className="relative bg-white p-8 rounded-3xl shadow-2xl border border-gray-100">
                     <div className="relative h-[600px] rounded-2xl overflow-hidden">
-                      <Image src="/assets/foto2.png" alt="Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
+                      <Image src="/foto2.png" alt="Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
                       
                       {/* Professional Badge */}
@@ -657,17 +657,17 @@ export default function Versao3() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
             {[
               {
-                src: "/assets/foto1.png",
+                src: "/foto1.png",
                 title: "Dr. Pedro em Ação",
                 subtitle: "Atendimento dedicado e personalizado"
               },
               {
-                src: "/assets/foto2.png", 
+                src: "/foto2.png", 
                 title: "Cuidado Especializado",
                 subtitle: "Expertise em medicina da fertilidade"
               },
               {
-                src: "/assets/foto3.png",
+                src: "/foto3.png",
                 title: "Ambiente Profissional", 
                 subtitle: "Estrutura moderna e acolhedora"
               }
@@ -812,7 +812,7 @@ export default function Versao3() {
             <div className="lg:col-span-2 space-y-6">
               <div className="flex items-center space-x-4">
                 <div className="h-16 flex items-center">
-                  <Image src="/assets/Logo.png" alt="Dr. Pedro Assunção" width={120} height={48} className="object-contain" />
+                  <Image src="/Logo.png" alt="Dr. Pedro Assunção" width={120} height={48} className="object-contain" />
                 </div>
                 <div className="border-l border-gray-700 pl-4">
                   <h3 className="text-xl font-bold bg-gradient-to-r from-[#5D6861] to-[#85927D] bg-clip-text text-transparent">
