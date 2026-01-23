@@ -188,7 +188,7 @@ export default function Versao3() {
                   <div className="absolute -inset-6 bg-gradient-to-br from-[#5D6861]/20 to-[#85927D]/20 rounded-3xl blur-2xl"></div>
                   <div className="relative bg-white p-6 rounded-3xl shadow-2xl border border-gray-100">
                     <div className="relative h-[500px] rounded-2xl overflow-hidden">
-                      <Image src="/foto1.png" alt="Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
+                      <Image src="/app/foto1.png" alt="Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                       
                       {/* Floating Badge */}
@@ -586,7 +586,7 @@ export default function Versao3() {
                   <div className="absolute -inset-8 bg-gradient-to-br from-[#5D6861]/20 to-[#85927D]/20 rounded-3xl blur-3xl"></div>
                   <div className="relative bg-white p-8 rounded-3xl shadow-2xl border border-gray-100">
                     <div className="relative h-[600px] rounded-2xl overflow-hidden">
-                      <Image src="/foto2.png" alt="Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
+                      <Image src="/app/foto2.png" alt="Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
                       
                       {/* Professional Badge */}
@@ -657,17 +657,17 @@ export default function Versao3() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
             {[
               {
-                src: "/foto1.png",
+                src: "/app/foto1.png",
                 title: "Dr. Pedro em Ação",
                 subtitle: "Atendimento dedicado e personalizado"
               },
               {
-                src: "/foto2.png", 
+                src: "/app/foto2.png", 
                 title: "Cuidado Especializado",
                 subtitle: "Expertise em medicina da fertilidade"
               },
               {
-                src: "/foto3.png",
+                src: "/app/foto3.png",
                 title: "Ambiente Profissional", 
                 subtitle: "Estrutura moderna e acolhedora"
               }
