@@ -1,6 +1,9 @@
 "use client";
 
 import Image from "next/image";
+import foto1 from '..foto1';
+import foto2 from '..foto2';
+import foto3 from '..foto3';
 import { useEffect } from "react";
 import { 
   Heart, 
@@ -120,7 +123,7 @@ export default function Versao2() {
           {/* Galeria do doutor */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 scroll-hidden">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-[#85927D] h-96">
-              <Image src="/foto1.png" alt="Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
+              <Image src="foto1" alt="Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
               <div className="absolute inset-0 bg-gradient-to-t from-[#5D6861]/30 to-transparent"></div>
               <div className="absolute bottom-6 left-6 text-white">
                 <h3 className="text-xl font-bold">Dr. Pedro Assunção</h3>
@@ -128,7 +131,7 @@ export default function Versao2() {
               </div>
             </div>
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-[#85927D] h-96">
-              <Image src="/foto2.png" alt="Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
+              <Image src="foto2" alt="Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
               <div className="absolute inset-0 bg-gradient-to-t from-[#5D6861]/30 to-transparent"></div>
               <div className="absolute bottom-6 left-6 text-white">
                 <h3 className="text-xl font-bold">Atendimento</h3>
@@ -136,7 +139,7 @@ export default function Versao2() {
               </div>
             </div>
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-[#85927D] h-96">
-              <Image src="/foto3.png" alt="Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
+              <Image src="foto3" alt="Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
               <div className="absolute inset-0 bg-gradient-to-t from-[#5D6861]/30 to-transparent"></div>
               <div className="absolute bottom-6 left-6 text-white">
                 <h3 className="text-xl font-bold">Consultório</h3>
@@ -431,7 +434,7 @@ export default function Versao2() {
               <div className="relative">
                 <div className="absolute -inset-4 bg-gradient-to-br from-[#5D6861]/20 to-[#85927D]/20 rounded-3xl blur-xl"></div>
                 <div className="relative bg-white rounded-3xl overflow-hidden shadow-2xl border-2 border-[#85927D]/20">
-                  <Image src="/foto2.png" alt="Dr. Pedro Assunção" className="object-cover w-full h-[600px]" fill />
+                  <Image src="foto2" alt="Dr. Pedro Assunção" className="object-cover w-full h-[600px]" fill />
                 </div>
               </div>
             </div>
@@ -455,7 +458,7 @@ export default function Versao2() {
             {/* Foto do Dr. Pedro com pacientes */}
             <div className="lg:row-span-2">
               <div className="relative h-96 lg:h-full rounded-3xl overflow-hidden shadow-2xl border-2 border-white/20">
-                <Image src="/foto1.png" alt="Dr. Pedro Assunção com pacientes" className="object-cover w-full h-full" fill />
+                <Image src="foto1" alt="Dr. Pedro Assunção com pacientes" className="object-cover w-full h-full" fill />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#5D6861]/50 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 text-white">
                   <h3 className="text-2xl font-bold mb-2">Dr. Pedro Assunção</h3>
@@ -524,7 +527,7 @@ export default function Versao2() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div className="group scroll-scale">
               <div className="relative bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-100 h-80">
-                <Image src="/foto1.png" alt="Dr. Pedro Assunção em atendimento" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" fill />
+                <Image src="foto1" alt="Dr. Pedro Assunção em atendimento" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" fill />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 text-white">
                   <h3 className="text-xl font-bold">Dr. Pedro em Ação</h3>
@@ -535,7 +538,7 @@ export default function Versao2() {
 
             <div className="group scroll-scale delay-200">
               <div className="relative bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-100 h-80">
-                <Image src="/foto2.png" alt="Dr. Pedro Assunção no consultório" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" fill />
+                <Image src="foto2" alt="Dr. Pedro Assunção no consultório" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" fill />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 text-white">
                   <h3 className="text-xl font-bold">Cuidado Especializado</h3>
@@ -546,7 +549,7 @@ export default function Versao2() {
 
             <div className="group scroll-scale delay-400">
               <div className="relative bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-100 h-80">
-                <Image src="/foto3.png" alt="Dr. Pedro Assunção" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" fill />
+                <Image src="foto3" alt="Dr. Pedro Assunção" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" fill />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 text-white">
                   <h3 className="text-xl font-bold">Ambiente Profissional</h3>

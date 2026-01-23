@@ -1,6 +1,9 @@
 "use client";
 
 import Image from "next/image";
+import foto1 from '..foto1';
+import foto2 from '..foto2';
+import foto3 from '..foto3';
 import { useEffect } from "react";
 import { 
   Heart, 
@@ -188,7 +191,7 @@ export default function Versao3() {
                   <div className="absolute -inset-6 bg-gradient-to-br from-[#5D6861]/20 to-[#85927D]/20 rounded-3xl blur-2xl"></div>
                   <div className="relative bg-white p-6 rounded-3xl shadow-2xl border border-gray-100">
                     <div className="relative h-[500px] rounded-2xl overflow-hidden">
-                      <Image src="/foto1.png" alt="Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
+                      <Image src="foto1" alt="Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                       
                       {/* Floating Badge */}
@@ -586,7 +589,7 @@ export default function Versao3() {
                   <div className="absolute -inset-8 bg-gradient-to-br from-[#5D6861]/20 to-[#85927D]/20 rounded-3xl blur-3xl"></div>
                   <div className="relative bg-white p-8 rounded-3xl shadow-2xl border border-gray-100">
                     <div className="relative h-[600px] rounded-2xl overflow-hidden">
-                      <Image src="/foto2.png" alt="Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
+                      <Image src="foto2" alt="Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
                       
                       {/* Professional Badge */}
@@ -657,17 +660,17 @@ export default function Versao3() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
             {[
               {
-                src: "/foto1.png",
+                src: "foto1",
                 title: "Dr. Pedro em Ação",
                 subtitle: "Atendimento dedicado e personalizado"
               },
               {
-                src: "/foto2.png", 
+                src: "foto2", 
                 title: "Cuidado Especializado",
                 subtitle: "Expertise em medicina da fertilidade"
               },
               {
-                src: "/foto3.png",
+                src: "foto3",
                 title: "Ambiente Profissional", 
                 subtitle: "Estrutura moderna e acolhedora"
               }

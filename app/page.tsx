@@ -1,6 +1,9 @@
 "use client";
 
 import Image from "next/image";
+import foto1 from '.foto1';
+import foto2 from '.foto2';
+import foto3 from '.foto3';
 import { useEffect } from "react";
 import { 
   Heart, 
@@ -78,7 +81,7 @@ export default function Home() {
               </button>
             </div>
             <div className="w-full h-96 rounded-2xl border-4 border-[#5D6861] shadow-xl overflow-hidden flex items-center justify-center animate-slide-in-right hover:scale-105 transition-transform duration-500 ease-in-out group bg-white relative">
-              <Image src="/foto1.png" alt="Dr. Pedro Assunção" className="object-cover w-full h-full rounded-lg" fill />
+              <Image src="foto1" alt="Dr. Pedro Assunção" className="object-cover w-full h-full rounded-lg" fill />
             </div>
           </div>
         </div>
@@ -394,7 +397,7 @@ export default function Home() {
               </div>
             </div>
             <div className="w-full h-96 rounded-2xl overflow-hidden flex items-center justify-center scroll-slide-right hover:scale-105 transition-transform duration-500 ease-in-out group relative">
-              <Image src="/foto2.png" alt="Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
+              <Image src="foto2" alt="Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
             </div>
           </div>
         </div>
@@ -415,13 +418,13 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="w-full h-48 rounded-xl overflow-hidden flex items-center justify-center scroll-scale relative">
-              <Image src="/foto1.png" alt="Consultório Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
+              <Image src="foto1" alt="Consultório Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
             </div>
             <div className="w-full h-48 rounded-xl overflow-hidden flex items-center justify-center scroll-scale delay-200 relative">
-              <Image src="/foto2.png" alt="Consultório Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
+              <Image src="foto2" alt="Consultório Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
             </div>
             <div className="w-full h-48 rounded-xl overflow-hidden flex items-center justify-center scroll-scale delay-400 relative">
-              <Image src="/foto3.png" alt="Consultório Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
+              <Image src="foto3" alt="Consultório Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
             </div>
           </div>
         </div>
