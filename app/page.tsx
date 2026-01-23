@@ -51,7 +51,7 @@ export default function Home() {
       <header className="bg-white shadow-sm transition-all duration-300 ease-in-out">
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between animate-fade-in">
           <div className="h-16 flex items-center justify-center hover:scale-105 transition-transform duration-300">
-            <Image src="/Logo.png" alt="Dr. Pedro Assunção" width={120} height={48} className="object-contain max-h-12" />
+            <Image src="/assets/Logo.png" alt="Dr. Pedro Assunção" width={120} height={48} className="object-contain max-h-12" />
           </div>
           <button className="bg-[#5D6861] text-white px-6 py-3 rounded-full hover:bg-[#85927D] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out font-medium flex items-center gap-2">
             <Calendar className="w-5 h-5" />
@@ -78,7 +78,7 @@ export default function Home() {
               </button>
             </div>
             <div className="w-full h-96 rounded-2xl border-4 border-[#5D6861] shadow-xl overflow-hidden flex items-center justify-center animate-slide-in-right hover:scale-105 transition-transform duration-500 ease-in-out group bg-white relative">
-              <Image src="/foto1.png" alt="Dr. Pedro Assunção" className="object-cover w-full h-full rounded-lg" fill />
+              <Image src="/assets/foto1.png" alt="Dr. Pedro Assunção" className="object-cover w-full h-full rounded-lg" fill />
             </div>
           </div>
         </div>
@@ -394,7 +394,7 @@ export default function Home() {
               </div>
             </div>
             <div className="w-full h-96 rounded-2xl overflow-hidden flex items-center justify-center scroll-slide-right hover:scale-105 transition-transform duration-500 ease-in-out group relative">
-              <Image src="/foto2.png" alt="Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
+              <Image src="/assets/foto2.png" alt="Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
             </div>
           </div>
         </div>
@@ -415,13 +415,13 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="w-full h-48 rounded-xl overflow-hidden flex items-center justify-center scroll-scale relative">
-              <Image src="/foto1.png" alt="Consultório Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
+              <Image src="/assets/foto1.png" alt="Consultório Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
             </div>
             <div className="w-full h-48 rounded-xl overflow-hidden flex items-center justify-center scroll-scale delay-200 relative">
-              <Image src="/foto2.png" alt="Consultório Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
+              <Image src="/assets/foto2.png" alt="Consultório Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
             </div>
             <div className="w-full h-48 rounded-xl overflow-hidden flex items-center justify-center scroll-scale delay-400 relative">
-              <Image src="/foto3.png" alt="Consultório Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
+              <Image src="/assets/foto3.png" alt="Consultório Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
             </div>
           </div>
         </div>
@@ -455,7 +455,7 @@ export default function Home() {
             {/* Logo e Descrição */}
             <div className="text-center md:text-left">
               <div className="h-16 mb-4 flex items-center justify-center md:justify-start">
-                <Image src="/Logo.png" alt="Dr. Pedro Assunção" width={120} height={48} className="object-contain max-h-12" />
+                <Image src="/assets/Logo.png" alt="Dr. Pedro Assunção" width={120} height={48} className="object-contain max-h-12" />
               </div>
               <p className="text-gray-300 leading-relaxed text-sm">
                 Medicina da Fertilidade com cuidado humano e científico para realizar o sonho da maternidade.
