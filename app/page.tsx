@@ -1,11 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import foto1 from './foto1.png';
-import foto2 from './foto2.png';
-import foto3 from './foto3.png';
+import clinica1 from './clinica1.png';
+import clinica2 from './clinica2.png';
+import clinica3 from './clinica3.png';
+import Depoimento1 from './Depoimento1.png';
+import Depoimento2 from './Depoimento2.png';
 import fotoSorrindo from './fotoSorrindo.jpeg';
-import bebeNascendo from './bebeNascendo.jpeg';
+import bebeNascendo from './bebeNascendo.png';
 import logo from './Logo.png';
 import { useEffect } from "react";
 import { 
@@ -275,38 +277,21 @@ export default function Home() {
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-12">
             Histórias que ajudei a construir
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white p-8 rounded-xl shadow-sm">
-              <div className="w-24 h-24 bg-green-100 rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden">
-                <Image src={bebeNascendo} alt="Bebê nascendo" className="object-cover w-full h-full rounded-full" fill />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white p-4 rounded-xl shadow-sm">
+              <div className="w-full rounded-lg overflow-hidden">
+                <Image src={Depoimento1} alt="Depoimento 1" className="object-contain w-full h-auto max-h-[600px]" width={600} height={800} />
               </div>
-              <div className="flex justify-center gap-1 mb-4">
-                <Star className="w-5 h-5 text-yellow-400 fill-current" />
-                <Star className="w-5 h-5 text-yellow-400 fill-current" />
-                <Star className="w-5 h-5 text-yellow-400 fill-current" />
-                <Star className="w-5 h-5 text-yellow-400 fill-current" />
-                <Star className="w-5 h-5 text-yellow-400 fill-current" />
-              </div>
-              <p className="text-gray-600 italic mb-4">
-                "Espaço para depoimento em vídeo ou texto"
-              </p>
-              <p className="text-gray-800 font-medium">Nome da Paciente</p>
             </div>
-            <div className="bg-white p-8 rounded-xl shadow-sm">
-              <div className="w-24 h-24 bg-gray-100 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <Users className="w-10 h-10 text-[#85927D]" />
+            <div className="bg-white p-4 rounded-xl shadow-sm">
+              <div className="w-full rounded-lg overflow-hidden">
+                <Image src={Depoimento2} alt="Depoimento 2" className="object-contain w-full h-auto max-h-[600px]" width={600} height={800} />
               </div>
-              <div className="flex justify-center gap-1 mb-4">
-                <Star className="w-5 h-5 text-yellow-400 fill-current" />
-                <Star className="w-5 h-5 text-yellow-400 fill-current" />
-                <Star className="w-5 h-5 text-yellow-400 fill-current" />
-                <Star className="w-5 h-5 text-yellow-400 fill-current" />
-                <Star className="w-5 h-5 text-yellow-400 fill-current" />
+            </div>
+            <div className="bg-white p-4 rounded-xl shadow-sm">
+              <div className="w-full rounded-lg overflow-hidden">
+                <Image src={bebeNascendo} alt="Bebê Nascendo" className="object-contain w-full h-auto max-h-[600px]" width={600} height={800} />
               </div>
-              <p className="text-gray-600 italic mb-4">
-                "Espaço para depoimento em vídeo ou texto"
-              </p>
-              <p className="text-gray-800 font-medium">Nome da Paciente</p>
             </div>
           </div>
         </div>
@@ -391,16 +376,25 @@ export default function Home() {
                 </h2>
               </div>
               <div className="bg-white p-6 rounded-xl">
-                <p className="text-gray-600 leading-relaxed">
-                  [COLOCAR MINI CURRÍCULO DO DR. AQUI]
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  Com uma escuta atenta e uma investigação médica minuciosa, Dr. Pedro acompanha mulheres e casais em momentos marcados por expectativa, ansiedade e esperança. Seu trabalho começa no acolhimento e se sustenta na ciência, respeitando o tempo, a história e as particularidades de cada paciente.
                 </p>
-                <p className="text-gray-600 leading-relaxed mt-4">
-                  Informações sobre formação, especialização, experiência e filosofia de atendimento.
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  Mais do que conduzir diagnósticos e condutas, Dr. Pedro caminha ao lado de quem deseja engravidar ou viver uma gestação com segurança. Aqui, cada decisão é compartilhada, cada etapa é explicada e cada cuidado é pensado para oferecer clareza, confiança e tranquilidade ao longo da jornada.
                 </p>
+                <div className="border-t pt-4">
+                  <h4 className="text-lg font-semibold text-[#5D6861] mb-3">Ginecologista e Obstetra</h4>
+                  <div className="text-sm text-gray-600 space-y-1">
+                    <p className="font-medium">CRM-PB 14388 • RQE 9710</p>
+                    <p>Graduação em Medicina pela Faculdade de Ciências Médicas da Paraíba (FCM-PB)</p>
+                    <p>Residência Médica em Ginecologia e Obstetrícia pela Universidade Federal da Paraíba (HULW/UFPB)</p>
+                    <p>Pós-Graduação Lato Sensu em Ginecologia e Obstetrícia pela Faculdade Global (FG)</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="w-full h-96 rounded-2xl overflow-hidden flex items-center justify-center scroll-slide-right hover:scale-105 transition-transform duration-500 ease-in-out group relative">
-              <Image src={foto2} alt="Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
+            <div className="w-full h-full rounded-2xl overflow-hidden flex items-center justify-center scroll-slide-right hover:scale-105 transition-transform duration-500 ease-in-out group relative">
+              <Image src={fotoSorrindo} alt="Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
             </div>
           </div>
         </div>
@@ -421,13 +415,13 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="w-full h-48 rounded-xl overflow-hidden flex items-center justify-center scroll-scale relative">
-              <Image src={foto1} alt="Consultório Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
+              <Image src={clinica1} alt="Consultório Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
             </div>
             <div className="w-full h-48 rounded-xl overflow-hidden flex items-center justify-center scroll-scale delay-200 relative">
-              <Image src={foto2} alt="Consultório Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
+              <Image src={clinica2} alt="Consultório Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
             </div>
             <div className="w-full h-48 rounded-xl overflow-hidden flex items-center justify-center scroll-scale delay-400 relative">
-              <Image src={foto3} alt="Consultório Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
+              <Image src={clinica3} alt="Consultório Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
             </div>
           </div>
         </div>
