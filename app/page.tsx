@@ -61,10 +61,10 @@ export default function Home() {
           <div className="h-16 flex items-center justify-center hover:scale-105 transition-transform duration-300">
             <Image src={logo} alt="Dr. Pedro Assunção" width={120} height={48} className="object-contain max-h-12" />
           </div>
-          <button className="bg-[#5D6861] text-white px-6 py-3 rounded-full hover:bg-[#85927D] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out font-medium flex items-center gap-2">
+          <a href="https://wa.me/5583996271000" target="_blank" rel="noopener noreferrer" className="bg-[#5D6861] text-white px-6 py-3 rounded-full hover:bg-[#85927D] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out font-medium flex items-center gap-2">
             <Calendar className="w-5 h-5" />
             AGENDAR AVALIAÇÃO
-          </button>
+          </a>
         </div>
       </header>
 
@@ -79,11 +79,11 @@ export default function Home() {
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 Sei que a jornada da maternidade pode trazer dúvidas e ansiedades. Aqui em João Pessoa, ofereço um espaço seguro de escuta e uma investigação médica minuciosa para maximizar as suas chances de ter seu bebê no colo.
               </p>
-              <button className="bg-[#5D6861] text-white px-8 py-4 rounded-full hover:bg-[#85927D] hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out transform font-medium text-lg flex items-center gap-3 mx-auto animate-pulse-slow">
+              <a href="https://wa.me/5583996271000" target="_blank" rel="noopener noreferrer" className="bg-[#5D6861] text-white px-8 py-4 rounded-full hover:bg-[#85927D] hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out transform font-medium text-lg flex items-center gap-3 mx-auto animate-pulse-slow">
                 <Stethoscope className="w-6 h-6" />
                 QUERO AGENDAR UMA AVALIAÇÃO DIAGNÓSTICA
                 <ArrowRight className="w-6 h-6" />
-              </button>
+              </a>
             </div>
             <div className="w-full h-96 rounded-2xl border-4 border-[#5D6861] shadow-xl overflow-hidden flex items-center justify-center animate-slide-in-right hover:scale-105 transition-transform duration-500 ease-in-out group bg-white relative">
               <Image src={fotoSorrindo} alt="Dr. Pedro Assunção" className="object-cover w-full h-full rounded-lg" fill />
@@ -203,11 +203,11 @@ export default function Home() {
           </div>
           
           <div className="text-center mt-12">
-            <button className="bg-[#5D6861] text-white px-8 py-4 rounded-full hover:bg-[#85927D] hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out transform font-medium text-lg flex items-center gap-3 mx-auto">
+            <a href="https://wa.me/5583996271000" target="_blank" rel="noopener noreferrer" className="bg-[#5D6861] text-white px-8 py-4 rounded-full hover:bg-[#85927D] hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out transform font-medium text-lg flex items-center gap-3 mx-auto">
               <Calendar className="w-6 h-6" />
               QUERO AGENDAR UMA AVALIAÇÃO DIAGNÓSTICA
               <ArrowRight className="w-6 h-6" />
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -355,11 +355,11 @@ export default function Home() {
           </div>
           
           <div className="text-center mt-12">
-            <button className="bg-[#5D6861] text-white px-8 py-4 rounded-full hover:bg-[#85927D] hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out transform font-medium text-lg flex items-center gap-3 mx-auto">
+            <a href="https://wa.me/5583996271000" target="_blank" rel="noopener noreferrer" className="bg-[#5D6861] text-white px-8 py-4 rounded-full hover:bg-[#85927D] hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out transform font-medium text-lg flex items-center gap-3 mx-auto">
               <Calendar className="w-6 h-6" />
               QUERO AGENDAR UMA AVALIAÇÃO DIAGNÓSTICA
               <ArrowRight className="w-6 h-6" />
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -436,11 +436,11 @@ export default function Home() {
           <p className="text-lg mb-8 leading-relaxed scroll-hidden">
             Se você busca respostas, segurança e um olhar cuidadoso sobre a sua saúde reprodutiva, estou à disposição para recebê-la. Vamos conversar, entender o seu momento e, juntos, traçar o melhor caminho para o seu sonho.
           </p>
-          <button className="bg-white text-[#5D6861] px-8 py-4 rounded-full hover:bg-gray-50 hover:scale-105 transition-all duration-300 font-medium text-lg flex items-center gap-3 mx-auto scroll-scale">
+          <a href="https://wa.me/5583996271000" target="_blank" rel="noopener noreferrer" className="bg-white text-[#5D6861] px-8 py-4 rounded-full hover:bg-gray-50 hover:scale-105 transition-all duration-300 font-medium text-lg flex items-center gap-3 mx-auto scroll-scale">
             <HeartHandshake className="w-6 h-6" />
             SOLICITAR MINHA AVALIAÇÃO DIAGNÓSTICA
             <ArrowRight className="w-6 h-6" />
-          </button>
+          </a>
           <p className="text-gray-100 mt-6">
             Atendimento ético, sigiloso e personalizado.
           </p>
