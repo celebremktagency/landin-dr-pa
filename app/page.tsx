@@ -61,7 +61,7 @@ export default function Home() {
           <div className="h-16 flex items-center justify-center hover:scale-105 transition-transform duration-300">
             <Image src={logo} alt="Dr. Pedro Assunção" width={120} height={48} className="object-contain max-h-12" />
           </div>
-          <a href="https://wa.me/5583996271000" target="_blank" rel="noopener noreferrer" className="bg-[#5D6861] text-white px-6 py-3 rounded-full hover:bg-[#85927D] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out font-medium flex items-center gap-2">
+          <a href="https://wa.me/5583996271000?text=Olá%2C%20gostaria%20de%20mais%20informações%21%20Cliquei%20no%20link%3A%20Agende%20sua%20avaliação%20diagnóstica%21" target="_blank" rel="noopener noreferrer" className="bg-[#5D6861] text-white px-6 py-3 rounded-full hover:bg-[#85927D] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out font-medium flex items-center gap-2">
             <Calendar className="w-5 h-5" />
             AGENDAR AVALIAÇÃO
           </a>
@@ -79,7 +79,7 @@ export default function Home() {
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 Sei que a jornada da maternidade pode trazer dúvidas e ansiedades. Aqui em João Pessoa, ofereço um espaço seguro de escuta e uma investigação médica minuciosa para maximizar as suas chances de ter seu bebê no colo.
               </p>
-              <a href="https://wa.me/5583996271000" target="_blank" rel="noopener noreferrer" className="bg-[#5D6861] text-white px-8 py-4 rounded-full hover:bg-[#85927D] hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out transform font-medium text-lg flex items-center gap-3 mx-auto animate-pulse-slow">
+              <a href="https://wa.me/5583996271000?text=Olá%2C%20gostaria%20de%20mais%20informações%21%20Cliquei%20no%20link%3A%20Agende%20sua%20avaliação%20diagnóstica%21" target="_blank" rel="noopener noreferrer" className="bg-[#5D6861] text-white px-8 py-4 rounded-full hover:bg-[#85927D] hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out transform font-medium text-lg flex items-center gap-3 mx-auto animate-pulse-slow">
                 <Stethoscope className="w-6 h-6" />
                 QUERO AGENDAR UMA AVALIAÇÃO DIAGNÓSTICA
                 <ArrowRight className="w-6 h-6" />
@@ -203,7 +203,7 @@ export default function Home() {
           </div>
           
           <div className="text-center mt-12">
-            <a href="https://wa.me/5583996271000" target="_blank" rel="noopener noreferrer" className="bg-[#5D6861] text-white px-8 py-4 rounded-full hover:bg-[#85927D] hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out transform font-medium text-lg flex items-center gap-3 mx-auto">
+            <a href="https://wa.me/5583996271000?text=Olá%2C%20gostaria%20de%20mais%20informações%21%20Cliquei%20no%20link%3A%20Agende%20sua%20avaliação%20diagnóstica%21" target="_blank" rel="noopener noreferrer" className="bg-[#5D6861] text-white px-8 py-4 rounded-full hover:bg-[#85927D] hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out transform font-medium text-lg flex items-center gap-3 mx-auto">
               <Calendar className="w-6 h-6" />
               QUERO AGENDAR UMA AVALIAÇÃO DIAGNÓSTICA
               <ArrowRight className="w-6 h-6" />
@@ -272,27 +272,95 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-gray-50 to-green-50">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-12">
-            Histórias que ajudei a construir
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white p-4 rounded-xl shadow-sm">
-              <div className="w-full rounded-lg overflow-hidden">
-                <Image src={Depoimento1} alt="Depoimento 1" className="object-contain w-full h-auto max-h-[600px]" width={600} height={800} />
+      <section className="py-20 px-4 bg-gradient-to-br from-[#5D6861] to-[#85927D] text-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16 scroll-hidden">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+              Depoimentos reais de pacientes
+            </h2>
+            <p className="text-xl text-white/80 max-w-3xl mx-auto">
+              Mensagens verdadeiras de famílias que realizaram o sonho da maternidade. 
+              Estes são ALGUNS prints reais de WhatsApp e momentos únicos registrados.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {/* Print do WhatsApp 1 */}
+            <div className="bg-white/15 backdrop-blur-sm rounded-3xl overflow-hidden shadow-2xl scroll-scale border-2 border-white/20">
+              <div className="p-4 bg-white/10">
+                <div className="flex items-center gap-2 mb-2">
+                  <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                    <span className="text-white text-xs">📱</span>
+                  </div>
+                  <span className="text-white/90 text-sm font-medium">Mensagem no WhatsApp</span>
+                  <span className="ml-auto text-green-400 text-xs">✓✓</span>
+                </div>
+              </div>
+              <div className="p-4">
+                <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                  <Image src={Depoimento1} alt="Print depoimento WhatsApp" className="object-contain w-full h-auto max-h-96" width={600} height={800} />
+                </div>
               </div>
             </div>
-            <div className="bg-white p-4 rounded-xl shadow-sm">
-              <div className="w-full rounded-lg overflow-hidden">
-                <Image src={Depoimento2} alt="Depoimento 2" className="object-contain w-full h-auto max-h-[600px]" width={600} height={800} />
+
+            {/* Print do WhatsApp 2 */}
+            <div className="bg-white/15 backdrop-blur-sm rounded-3xl overflow-hidden shadow-2xl scroll-scale delay-200 border-2 border-white/20">
+              <div className="p-4 bg-white/10">
+                <div className="flex items-center gap-2 mb-2">
+                  <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                    <span className="text-white text-xs">📱</span>
+                  </div>
+                  <span className="text-white/90 text-sm font-medium">Mensagem no WhatsApp</span>
+                  <span className="ml-auto text-green-400 text-xs">✓✓</span>
+                </div>
+              </div>
+              <div className="p-4">
+                <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                  <Image src={Depoimento2} alt="Print depoimento WhatsApp" className="object-contain w-full h-auto max-h-96" width={600} height={800} />
+                </div>
               </div>
             </div>
-            <div className="bg-white p-4 rounded-xl shadow-sm">
-              <div className="w-full rounded-lg overflow-hidden">
-                <Image src={bebeNascendo} alt="Bebê Nascendo" className="object-contain w-full h-auto max-h-[600px]" width={600} height={800} />
+
+            {/* Momento especial - Bebê nascendo */}
+            <div className="bg-white/15 backdrop-blur-sm rounded-3xl overflow-hidden shadow-2xl scroll-scale delay-400 border-2 border-white/20">
+              <div className="p-4 bg-white/10">
+                <div className="flex items-center gap-2 mb-2">
+                  <div className="w-8 h-8 bg-pink-500 rounded-full flex items-center justify-center">
+                    <Baby className="w-4 h-4 text-white" />
+                  </div>
+                  <span className="text-white/90 text-sm font-medium">Momento especial registrado</span>
+                  <div className="ml-auto flex text-yellow-300">
+                    <Star className="w-4 h-4 fill-current" />
+                    <Star className="w-4 h-4 fill-current" />
+                    <Star className="w-4 h-4 fill-current" />
+                  </div>
+                </div>
+              </div>
+              <div className="p-4">
+                <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                  <Image src={bebeNascendo} alt="Bebê recém-nascido - paciente do Dr. Pedro" className="object-cover w-full h-48 md:h-64" width={600} height={400} />
+                </div>
+                <div className="mt-4 text-center">
+                  <p className="text-white/90 text-sm leading-relaxed">
+                    💕 <em>"Momento único: mais uma vida que chega ao mundo com segurança"</em>
+                  </p>
+                  <p className="text-white/70 text-xs mt-2">
+                    Registro real de uma paciente do Dr. Pedro
+                  </p>
+                </div>
               </div>
             </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-white/80 mb-6 text-lg">
+              📱 Depoimentos 100% autênticos • 👶 Momentos reais registrados
+            </p>
+            <a href="https://wa.me/5583996271000?text=Olá%2C%20gostaria%20de%20mais%20informações%21%20Cliquei%20no%20link%3A%20Agende%20sua%20avaliação%20diagnóstica%21" target="_blank" rel="noopener noreferrer" className="bg-white text-[#5D6861] px-8 py-4 rounded-full hover:bg-gray-50 hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out transform font-medium text-lg flex items-center gap-3 mx-auto">
+              <HeartHandshake className="w-6 h-6" />
+              QUERO ENVIAR MEU DEPOIMENTO TAMBÉM
+              <ArrowRight className="w-6 h-6" />
+            </a>
           </div>
         </div>
       </section>
@@ -355,7 +423,7 @@ export default function Home() {
           </div>
           
           <div className="text-center mt-12">
-            <a href="https://wa.me/5583996271000" target="_blank" rel="noopener noreferrer" className="bg-[#5D6861] text-white px-8 py-4 rounded-full hover:bg-[#85927D] hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out transform font-medium text-lg flex items-center gap-3 mx-auto">
+            <a href="https://wa.me/5583996271000?text=Olá%2C%20gostaria%20de%20mais%20informações%21%20Cliquei%20no%20link%3A%20Agende%20sua%20avaliação%20diagnóstica%21" target="_blank" rel="noopener noreferrer" className="bg-[#5D6861] text-white px-8 py-4 rounded-full hover:bg-[#85927D] hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out transform font-medium text-lg flex items-center gap-3 mx-auto">
               <Calendar className="w-6 h-6" />
               QUERO AGENDAR UMA AVALIAÇÃO DIAGNÓSTICA
               <ArrowRight className="w-6 h-6" />
@@ -436,7 +504,7 @@ export default function Home() {
           <p className="text-lg mb-8 leading-relaxed scroll-hidden">
             Se você busca respostas, segurança e um olhar cuidadoso sobre a sua saúde reprodutiva, estou à disposição para recebê-la. Vamos conversar, entender o seu momento e, juntos, traçar o melhor caminho para o seu sonho.
           </p>
-          <a href="https://wa.me/5583996271000" target="_blank" rel="noopener noreferrer" className="bg-white text-[#5D6861] px-8 py-4 rounded-full hover:bg-gray-50 hover:scale-105 transition-all duration-300 font-medium text-lg flex items-center gap-3 mx-auto scroll-scale">
+          <a href="https://wa.me/5583996271000?text=Olá%2C%20gostaria%20de%20mais%20informações%21%20Cliquei%20no%20link%3A%20Agende%20sua%20avaliação%20diagnóstica%21" target="_blank" rel="noopener noreferrer" className="bg-white text-[#5D6861] px-8 py-4 rounded-full hover:bg-gray-50 hover:scale-105 transition-all duration-300 font-medium text-lg flex items-center gap-3 mx-auto scroll-scale">
             <HeartHandshake className="w-6 h-6" />
             SOLICITAR MINHA AVALIAÇÃO DIAGNÓSTICA
             <ArrowRight className="w-6 h-6" />
