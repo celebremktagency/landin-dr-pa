@@ -437,7 +437,7 @@ export default function Home() {
       <section className="py-20 px-4 bg-gradient-to-br from-gray-50 to-green-50">
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="scroll-slide-left">
+            <div className="scroll-slide-left lg:order-1 order-2">
               <div className="flex items-center gap-4 mb-6">
                 <Award className="w-10 h-10 text-[#5D6861]" />
                 <h2 className="text-3xl lg:text-4xl font-bold text-gray-800">
@@ -462,7 +462,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="w-full h-full rounded-2xl overflow-hidden flex items-center justify-center scroll-slide-right hover:scale-105 transition-transform duration-500 ease-in-out group relative">
+            <div className="w-full h-96 lg:h-full rounded-2xl overflow-hidden flex items-center justify-center scroll-slide-right hover:scale-105 transition-transform duration-500 ease-in-out group relative lg:order-2 order-1">
               <Image src={fotodeterno} alt="Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
             </div>
           </div>
