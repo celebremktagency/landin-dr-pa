@@ -7,6 +7,7 @@ import clinica3 from './clinica3.png';
 import Depoimento1 from './Depoimento1.png';
 import Depoimento2 from './Depoimento2.png';
 import fotoSorrindo from './fotoSorrindo.jpeg';
+import fotodeterno from './fotodeterno.png';
 import bebeNascendo from './bebeNascendo.png';
 import logo from './Logo.png';
 import { useEffect } from "react";
@@ -462,7 +463,7 @@ export default function Home() {
               </div>
             </div>
             <div className="w-full h-full rounded-2xl overflow-hidden flex items-center justify-center scroll-slide-right hover:scale-105 transition-transform duration-500 ease-in-out group relative">
-              <Image src={fotoSorrindo} alt="Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
+              <Image src={fotodeterno} alt="Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
             </div>
           </div>
         </div>
