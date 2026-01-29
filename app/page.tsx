@@ -339,7 +339,7 @@ export default function Home() {
               </div>
               <div className="p-4">
                 <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-                  <Image src={bebeNascendo} alt="Bebê recém-nascido - paciente do Dr. Pedro" className="object-cover w-full h-48 md:h-64" width={600} height={400} />
+                  <Image src={bebeNascendo} alt="Bebê recém-nascido - paciente do Dr. Pedro" className="object-cover w-full h-48 md:h-64 object-top-right" width={600} height={400} style={{objectPosition: 'right 20% top 30%'}} />
                 </div>
                 <div className="mt-4 text-center">
                   <p className="text-white/90 text-sm leading-relaxed">
