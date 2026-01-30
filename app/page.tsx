@@ -8,7 +8,7 @@ import Depoimento1 from './Depoimento1.png';
 import Depoimento2 from './Depoimento2.png';
 import fotoSorrindo from './fotoSorrindo.jpeg';
 import fotodeterno from './fotodeterno.png';
-import bebeNascendo from './bebeNascendo.png';
+import bebeNascendo from './bebeNscendo.jpeg';
 import logo from './Logo.png';
 import { useEffect } from "react";
 import { 
@@ -339,7 +339,7 @@ export default function Home() {
               </div>
               <div className="p-4">
                 <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-                  <Image src={bebeNascendo} alt="Bebê recém-nascido - paciente do Dr. Pedro" className="object-cover w-full h-48 md:h-64 object-top-right" width={600} height={400} style={{objectPosition: 'right 20% top 30%'}} />
+                  <Image src={bebeNascendo} alt="Bebê recém-nascido - paciente do Dr. Pedro" className="object-cover w-full h-48 md:h-64 object-top-right" width={600} height={400} style={{objectPosition: 'right 20% top 10%'}} />
                 </div>
                 <div className="mt-4 text-center">
                   <p className="text-white/90 text-sm leading-relaxed">
@@ -463,7 +463,7 @@ export default function Home() {
               </div>
             </div>
             <div className="w-full h-96 lg:h-full rounded-2xl overflow-hidden flex items-center justify-center scroll-slide-right hover:scale-105 transition-transform duration-500 ease-in-out group relative lg:order-2 order-1">
-              <Image src={fotodeterno} alt="Dr. Pedro Assunção" className="object-cover w-full h-full" fill />
+              <Image src={fotodeterno} alt="Dr. Pedro Assunção" className="object-cover w-full h-full" fill style={{objectPosition: 'center 20%'}} />
             </div>
           </div>
         </div>
