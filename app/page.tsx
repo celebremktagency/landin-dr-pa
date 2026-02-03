@@ -141,14 +141,14 @@ export default function Home() {
             {/* Lado Esquerdo - Texto e Botão */}
             <div className="text-left py-20 pt-40">
               <h1 className="text-3xl lg:text-4xl xl:text-5xl font-extrabold leading-[1.1] mb-8">
-                <span className="text-white block">Seu objetivo final não é apenas</span>
-                <span className="text-white block">o teste positivo.</span>
-                <span className="text-white block bg-gradient-to-r from-[#D4AF37] to-[#F2D06B] bg-clip-text text-transparent">É ter o seu bebê no colo</span>
-                <span className="text-white/90 block text-3xl lg:text-4xl xl:text-5xl font-light italic">com saúde.</span>
+                <span className="text-white block font-black tracking-tight">Seu objetivo final não é apenas</span>
+                <span className="text-white block font-black tracking-tight">o teste positivo.</span>
+                <span className="text-white block bg-gradient-to-r from-[#D4AF37] to-[#F2D06B] bg-clip-text text-transparent font-bold tracking-wide">É ter o seu bebê no colo</span>
+                <span className="text-white/90 block text-2xl lg:text-3xl xl:text-4xl font-extralight italic tracking-wider">com saúde.</span>
               </h1>
               
               <p className="text-lg lg:text-xl text-white/95 leading-relaxed mb-8 max-w-2xl font-light">
-                Sei que a jornada da maternidade pode trazer dúvidas e ansiedades. Aqui em <span className="font-medium text-[#D4AF37]">João Pessoa</span>, ofereço um espaço seguro de escuta e uma investigação médica minuciosa para maximizar as suas chances de ter seu bebê no colo.
+                Sei que a jornada da maternidade pode trazer <span className="font-medium italic">dúvidas e ansiedades</span>. Aqui em <span className="font-bold text-[#D4AF37] tracking-wide">João Pessoa</span>, ofereço um espaço seguro de escuta e uma <span className="font-semibold underline decoration-[#D4AF37]/50">investigação médica minuciosa</span> para maximizar as suas chances de ter seu bebê no colo.
               </p>
               
               <div className="space-y-6">
@@ -167,11 +167,11 @@ export default function Home() {
 
             {/* Lado Direito - Imagem */}
             <div className="relative flex justify-center lg:justify-end">
-              <div className="relative h-[calc(100vh-10px)] flex items-end">
+              <div className="relative h-[calc(100vh+50px)] flex items-end">
                 <Image 
                   src={rosto} 
                   alt="Dr. Pedro Assunção" 
-                  className="h-full w-auto object-contain object-bottom"
+                  className="h-full w-auto object-contain object-bottom scale-110"
                 />
               </div>
             </div>
@@ -188,8 +188,9 @@ export default function Home() {
         
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="mb-16 scroll-hidden">
-            <h2 className="text-4xl lg:text-5xl font-bold text-[#667269] leading-tight mb-8">
-              Eu sei que o caminho até aqui pode ter sido exaustivo.
+            <h2 className="text-4xl lg:text-5xl leading-tight mb-8">
+              <span className="font-light text-[#667269] italic tracking-wide">Eu sei que o caminho até aqui</span><br/>
+              <span className="font-black text-[#4A5D4F] tracking-tight">pode ter sido exaustivo.</span>
             </h2>
             <p className="text-lg text-[#4A5D4F] max-w-4xl mx-auto leading-relaxed mb-12">
               Muitas mulheres e casais chegam ao meu consultório carregando uma bagagem emocional pesada. Talvez você se identifique com estes sentimentos:
@@ -276,8 +277,9 @@ export default function Home() {
               <div className="inline-flex items-center gap-2 bg-[#D4AF37]/10 backdrop-blur-sm rounded-full px-6 py-3 mb-6 border border-[#D4AF37]/30">
                 <p className="text-[#D4AF37] font-semibold text-lg uppercase tracking-wider">Minha Abordagem</p>
               </div>
-              <h2 className="text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
-                Uma abordagem integral
+              <h2 className="text-4xl lg:text-5xl leading-tight mb-6">
+                <span className="font-light text-white/90 italic tracking-wider">Uma abordagem</span><br/>
+                <span className="font-black text-white tracking-tight">integral</span>
               </h2>
               <p className="text-white/90 text-lg max-w-4xl mx-auto leading-relaxed">
                 Eu acredito que a medicina da fertilidade não deve ser mecânica. Cada história é única, e cada corpo tem seu próprio tempo e necessidades. Por isso, meu trabalho não é oferecer fórmulas mágicas, mas sim <span className="text-[#D4AF37] font-semibold">Investigação e Cuidado</span>.
@@ -398,19 +400,14 @@ export default function Home() {
                     <p className="text-lg font-light">
                       <span className="text-[#D4AF37] font-medium">Minha missão</span> é oferecer cuidado integral, desde a investigação das causas da infertilidade até o acompanhamento completo da gestação, sempre priorizando a <span className="text-white font-medium">segurança</span> e o <span className="text-white font-medium">bem-estar</span> dos meus pacientes.
                     </p>
-                  </div>
-                  
-                  <div className="mt-8 pt-6 border-t border-[#D4AF37]/20">
-                    <div className="grid grid-cols-2 gap-6">
-                      <div className="text-center">
-                        <p className="text-3xl font-bold text-[#D4AF37]">500+</p>
-                        <p className="text-white/80 text-sm">Famílias Realizadas</p>
-                      </div>
-                      <div className="text-center">
-                        <p className="text-3xl font-bold text-[#D4AF37]">5+</p>
-                        <p className="text-white/80 text-sm">Anos de Experiência</p>
-                      </div>
-                    </div>
+                    
+                    <p className="text-lg font-light">
+                      Acredito que cada <span className="font-medium italic text-white">história é única</span> e merece ser tratada com a máxima dedicação. Por isso, meu atendimento é <span className="text-[#D4AF37] font-semibold">personalizado e humanizado</span>, sempre baseado nas melhores evidências científicas disponíveis.
+                    </p>
+                    
+                    <p className="text-lg font-light">
+                      <span className="text-[#D4AF37] font-medium">Meu compromisso</span> é estar ao seu lado em cada etapa dessa jornada, oferecendo não apenas conhecimento técnico, mas também <span className="font-semibold text-white underline decoration-[#D4AF37]/40">apoio emocional e orientação clara</span> para que você se sinta segura e confiante em suas decisões.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -431,8 +428,9 @@ export default function Home() {
               <div className="w-2 h-2 bg-[#D4AF37] rounded-full animate-pulse"></div>
               <p className="text-[#D4AF37] font-semibold text-lg uppercase tracking-wider">Nossos Serviços</p>
             </div>
-            <h2 className="text-4xl lg:text-5xl font-bold text-[#667269] leading-tight mb-6">
-              Como posso ajudar no seu momento atual?
+            <h2 className="text-4xl lg:text-5xl leading-tight mb-6">
+              <span className="font-light text-[#667269] italic tracking-wide">Como posso ajudar</span><br/>
+              <span className="font-black text-[#4A5D4F] tracking-tight">no seu momento atual?</span>
             </h2>
             <p className="text-lg text-[#4A5D4F] max-w-4xl mx-auto leading-relaxed">
               Minha atuação é dividida em dois grandes pilares de cuidado, desenhados para oferecer o suporte que você precisa, seja na tentativa ou na gestação.
@@ -603,8 +601,9 @@ export default function Home() {
       <section className="py-20 px-4">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-[#667269] leading-tight">
-              Um atendimento pensado para acolher você
+            <h2 className="text-4xl lg:text-5xl leading-tight">
+              <span className="font-light text-[#667269] italic tracking-wide">Um atendimento pensado</span><br/>
+              <span className="font-black text-[#4A5D4F] tracking-tight">para acolher você</span>
             </h2>
           </div>
           
