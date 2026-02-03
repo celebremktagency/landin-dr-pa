@@ -136,47 +136,89 @@ export default function Home() {
         <div className="absolute bottom-12 right-1/3 w-14 h-14 bg-white/13 rounded-full blur-lg z-25"></div>
         
         <div className="max-w-7xl mx-auto relative z-30">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            
-            {/* Lado Esquerdo - Texto e Botão */}
-            <div className="text-left py-20 pt-40">
-              <h1 className="text-3xl lg:text-4xl xl:text-5xl font-extrabold leading-[1.1] mb-8">
+          
+          {/* Mobile: Stack layout (texto em cima, imagem embaixo) */}
+          <div className="block lg:hidden">
+            {/* Texto */}
+            <div className="text-left py-20 pt-40 px-4">
+              <h1 className="text-2xl sm:text-3xl font-extrabold leading-[1.1] mb-6">
                 <span className="text-white block font-black tracking-tight">Seu objetivo final não é apenas</span>
                 <span className="text-white block font-black tracking-tight">o teste positivo.</span>
                 <span className="text-white block bg-gradient-to-r from-[#D4AF37] to-[#F2D06B] bg-clip-text text-transparent font-bold tracking-wide">É ter o seu bebê no colo</span>
-                <span className="text-white/90 block text-2xl lg:text-3xl xl:text-4xl font-extralight italic tracking-wider">com saúde.</span>
+                <span className="text-white/90 block text-xl sm:text-2xl font-extralight italic tracking-wider">com saúde.</span>
               </h1>
               
-              <p className="text-lg lg:text-xl text-white/95 leading-relaxed mb-8 max-w-2xl font-light">
+              <p className="text-base sm:text-lg text-white/95 leading-relaxed mb-6 font-light">
                 Sei que a jornada da maternidade pode trazer <span className="font-medium italic">dúvidas e ansiedades</span>. Aqui em <span className="font-bold text-[#D4AF37] tracking-wide">João Pessoa</span>, ofereço um espaço seguro de escuta e uma <span className="font-semibold underline decoration-[#D4AF37]/50">investigação médica minuciosa</span> para maximizar as suas chances de ter seu bebê no colo.
               </p>
               
-              <div className="space-y-6">
-                {/* Botão principal - Agendar Consulta */}
-                <div className="group relative inline-block">
+              <div className="mb-8">
+                <div className="group relative inline-block w-full sm:w-auto">
                   <div className="absolute -inset-1 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 rounded-2xl blur opacity-70 group-hover:opacity-100 transition duration-300"></div>
-                  <div className="relative bg-gradient-to-r from-[#D4AF37] via-[#F2D06B] to-[#E6C547] rounded-2xl px-8 py-5 shadow-[0_10px_40px_rgba(212,175,55,0.4)] hover:shadow-[0_15px_50px_rgba(212,175,55,0.6)] transform hover:scale-105 transition-all duration-300">
+                  <div className="relative bg-gradient-to-r from-[#D4AF37] via-[#F2D06B] to-[#E6C547] rounded-2xl px-6 py-4 shadow-[0_10px_40px_rgba(212,175,55,0.4)] hover:shadow-[0_15px_50px_rgba(212,175,55,0.6)] transform hover:scale-105 transition-all duration-300">
                     <a href="https://wa.me/5583996271000?text=Olá%2C%20gostaria%20de%20mais%20informações%21%20Cliquei%20no%20link%3A%20Agende%20sua%20avaliação%20diagnóstica%21" target="_blank" rel="noopener noreferrer" 
-                       className="text-[#667269] font-bold text-lg flex items-center justify-center gap-3">
-                      <span className="drop-shadow-sm">QUERO AGENDAR UMA AVALIAÇÃO DIAGNÓSTICA</span>
+                       className="text-[#667269] font-bold text-sm sm:text-base flex items-center justify-center gap-2">
+                      <span className="drop-shadow-sm text-center">QUERO AGENDAR UMA AVALIAÇÃO DIAGNÓSTICA</span>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-
-            {/* Lado Direito - Imagem */}
-            <div className="relative flex justify-center lg:justify-end">
-              <div className="relative h-[calc(100vh+50px)] flex items-end">
-                <Image 
-                  src={rosto} 
-                  alt="Dr. Pedro Assunção" 
-                  className="h-full w-auto object-contain object-bottom scale-110"
-                />
-              </div>
+            
+            {/* Imagem */}
+            <div className="relative h-[60vh] sm:h-[70vh] flex items-center justify-center px-4">
+              <Image 
+                src={rosto} 
+                alt="Dr. Pedro Assunção" 
+                className="h-full w-auto object-contain object-center"
+              />
             </div>
-
           </div>
+
+          {/* Desktop: Float layout (lado a lado) */}
+          <div className="hidden lg:block">
+            <div className="clearfix">
+              
+              {/* Lado Esquerdo - Texto e Botão */}
+              <div className="float-left w-1/2 text-left py-20 pt-40 pr-8">
+                <h1 className="text-3xl lg:text-4xl xl:text-5xl font-extrabold leading-[1.1] mb-8">
+                  <span className="text-white block font-black tracking-tight">Seu objetivo final não é apenas</span>
+                  <span className="text-white block font-black tracking-tight">o teste positivo.</span>
+                  <span className="text-white block bg-gradient-to-r from-[#D4AF37] to-[#F2D06B] bg-clip-text text-transparent font-bold tracking-wide">É ter o seu bebê no colo</span>
+                  <span className="text-white/90 block text-2xl lg:text-3xl xl:text-4xl font-extralight italic tracking-wider">com saúde.</span>
+                </h1>
+                
+                <p className="text-lg lg:text-xl text-white/95 leading-relaxed mb-8 max-w-2xl font-light">
+                  Sei que a jornada da maternidade pode trazer <span className="font-medium italic">dúvidas e ansiedades</span>. Aqui em <span className="font-bold text-[#D4AF37] tracking-wide">João Pessoa</span>, ofereço um espaço seguro de escuta e uma <span className="font-semibold underline decoration-[#D4AF37]/50">investigação médica minuciosa</span> para maximizar as suas chances de ter seu bebê no colo.
+                </p>
+                
+                <div className="space-y-6">
+                  <div className="group relative inline-block">
+                    <div className="absolute -inset-1 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 rounded-2xl blur opacity-70 group-hover:opacity-100 transition duration-300"></div>
+                    <div className="relative bg-gradient-to-r from-[#D4AF37] via-[#F2D06B] to-[#E6C547] rounded-2xl px-8 py-5 shadow-[0_10px_40px_rgba(212,175,55,0.4)] hover:shadow-[0_15px_50px_rgba(212,175,55,0.6)] transform hover:scale-105 transition-all duration-300">
+                      <a href="https://wa.me/5583996271000?text=Olá%2C%20gostaria%20de%20mais%20informações%21%20Cliquei%20no%20link%3A%20Agende%20sua%20avaliação%20diagnóstica%21" target="_blank" rel="noopener noreferrer" 
+                         className="text-[#667269] font-bold text-lg flex items-center justify-center gap-3">
+                        <span className="drop-shadow-sm">QUERO AGENDAR UMA AVALIAÇÃO DIAGNÓSTICA</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Lado Direito - Imagem */}
+              <div className="float-right w-1/2 relative flex justify-end">
+                <div className="relative h-[calc(100vh+150px)] flex items-center">
+                  <Image 
+                    src={rosto} 
+                    alt="Dr. Pedro Assunção" 
+                    className="h-full w-auto object-contain object-center scale-125"
+                  />
+                </div>
+              </div>
+
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -259,102 +301,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Transição com gradiente */}
-      <div className="h-20 bg-gradient-to-b from-[#F5F7F5] to-[#667269]/30"></div>
       
-      {/* Seção da Solução - FULL WIDTH */}
-      <section className="bg-gradient-to-br from-[#667269] via-[#4A5D4F] to-[#667269] py-20 relative overflow-hidden">
-        {/* Spots de luz de fundo */}
-        <div className="absolute top-10 left-10 w-64 h-64 bg-[#D4AF37]/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-20 w-48 h-48 bg-[#667269]/15 rounded-full blur-2xl"></div>
-        
-        <div className="max-w-6xl mx-auto px-4 relative z-10">
-          <div className="relative overflow-hidden">
-            {/* Pattern de fundo tecnológico */}
-            <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%2523D4AF37%22%20fill-opacity%3D%220.05%22%3E%3Cpath%20d%3D%22m0%2040c0-11.046%208.954-20%2020-20s20%208.954%2020%2020v20h-40z%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-30"></div>
-            
-            <div className="text-center mb-12 relative z-10">
-              <div className="inline-flex items-center gap-2 bg-[#D4AF37]/10 backdrop-blur-sm rounded-full px-6 py-3 mb-6 border border-[#D4AF37]/30">
-                <p className="text-[#D4AF37] font-semibold text-lg uppercase tracking-wider">Minha Abordagem</p>
-              </div>
-              <h2 className="text-4xl lg:text-5xl leading-tight mb-6">
-                <span className="font-light text-white/90 italic tracking-wider">Uma abordagem</span><br/>
-                <span className="font-black text-white tracking-tight">integral</span>
-              </h2>
-              <p className="text-white/90 text-lg max-w-4xl mx-auto leading-relaxed">
-                Eu acredito que a medicina da fertilidade não deve ser mecânica. Cada história é única, e cada corpo tem seu próprio tempo e necessidades. Por isso, meu trabalho não é oferecer fórmulas mágicas, mas sim <span className="text-[#D4AF37] font-semibold">Investigação e Cuidado</span>.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
-              <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-3xl p-6 shadow-[0_15px_50px_rgba(0,0,0,0.3)] border border-white/10">
-                <div className="w-16 h-16 bg-gradient-to-r from-[#D4AF37] to-[#F2D06B] rounded-2xl flex items-center justify-center mb-6 shadow-lg">
-                  <Eye className="w-8 h-8 text-[#667269]" />
-                </div>
-                <h3 className="text-xl font-bold text-white mb-4">Olhar Multidisciplinar</h3>
-                <p className="text-white/80 leading-relaxed">
-                  A fertilidade não é isolada. Eu avalio a saúde global do casal, entendendo como o estilo de vida, o emocional e a biologia conversam entre si.
-                </p>
-              </div>
-
-              <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-3xl p-6 shadow-[0_15px_50px_rgba(0,0,0,0.3)] border border-white/10">
-                <div className="w-16 h-16 bg-gradient-to-r from-[#D4AF37] to-[#F2D06B] rounded-2xl flex items-center justify-center mb-6 shadow-lg">
-                  <Microscope className="w-8 h-8 text-[#667269]" />
-                </div>
-                <h3 className="text-xl font-bold text-white mb-4">Investigação Minuciosa</h3>
-                <p className="text-white/80 leading-relaxed">
-                  Antes de propor qualquer caminho, precisamos entender o terreno. Realizo uma avaliação diagnóstica detalhada para identificar fatores que podem estar dificultando a concepção.
-                </p>
-              </div>
-
-              <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-3xl p-6 shadow-[0_15px_50px_rgba(0,0,0,0.3)] border border-white/10">
-                <div className="w-16 h-16 bg-gradient-to-r from-[#D4AF37] to-[#F2D06B] rounded-2xl flex items-center justify-center mb-6 shadow-lg">
-                  <Target className="w-8 h-8 text-[#667269]" />
-                </div>
-                <h3 className="text-xl font-bold text-white mb-4">Preparo do Organismo</h3>
-                <p className="text-white/80 leading-relaxed">
-                  Trabalhamos para que o seu corpo (e o do seu parceiro) esteja nas melhores condições possíveis para receber uma nova vida.
-                </p>
-              </div>
-
-              <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-3xl p-6 shadow-[0_15px_50px_rgba(0,0,0,0.3)] border border-white/10">
-                <div className="w-16 h-16 bg-gradient-to-r from-[#D4AF37] to-[#F2D06B] rounded-2xl flex items-center justify-center mb-6 shadow-lg">
-                  <CheckCircle className="w-8 h-8 text-[#667269]" />
-                </div>
-                <h3 className="text-xl font-bold text-white mb-4">Transparência e Direcionamento</h3>
-                <p className="text-white/80 leading-relaxed">
-                  A medicina não nos permite garantir resultados absolutos, mas meu compromisso é utilizar todo o conhecimento científico disponível para maximizar suas chances.
-                </p>
-              </div>
-            </div>
-
-            <div className="text-center mt-12 relative z-10">
-              <div className="group relative inline-block">
-                <div className="absolute -inset-1 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 rounded-2xl blur opacity-70 group-hover:opacity-100 transition duration-300"></div>
-                <div className="relative bg-gradient-to-r from-[#D4AF37] to-[#F2D06B] rounded-2xl px-8 py-4 shadow-[0_8px_30px_rgb(212,175,55,0.3)] hover:scale-105 transition-all duration-300">
-                  <a href="https://wa.me/5583996271000?text=Olá%2C%20gostaria%20de%20mais%20informações%21%20Cliquei%20no%20link%3A%20Agende%20sua%20avaliação%20diagnóstica%21" target="_blank" rel="noopener noreferrer" 
-                     className="text-[#667269] font-bold text-lg flex items-center gap-3">
-                    <span>QUERO AGENDAR UMA AVALIAÇÃO DIAGNÓSTICA</span>
-                    <ArrowRight className="w-6 h-6" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-      {/* Transição com gradiente */}
-      <div className="h-16 bg-gradient-to-b from-[#667269] via-[#4A5D4F] to-[#F5F7F5]"></div>
-      
-      {/* About Doctor - Container menor para dinamismo */}
-      <section className="py-20 px-4 relative overflow-hidden">
-        <div className="max-w-5xl mx-auto bg-gradient-to-br from-[#667269] via-[#4A5D4F] to-[#2F4A32] rounded-[40px] p-12 lg:p-16 shadow-[0_25px_70px_rgba(102,114,105,0.3)] relative overflow-hidden">
+      {/* About Doctor - FULL WIDTH GREEN */}
+      <section className="bg-gradient-to-br from-[#667269] via-[#4A5D4F] to-[#2F4A32] py-20 relative overflow-hidden">
         {/* Efeitos de fundo */}
         <div className="absolute top-1/2 left-0 w-96 h-96 bg-[#667269]/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 right-0 w-64 h-64 bg-[#D4AF37]/10 rounded-full blur-2xl"></div>
         
+        <div className="max-w-7xl mx-auto px-4 relative z-10">
           <div className="relative overflow-hidden">
             {/* Pattern tecnológico */}
             <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%2523D4AF37%22%20fill-opacity%3D%220.03%22%3E%3Ccircle%20cx%3D%2220%22%20cy%3D%2220%22%20r%3D%224%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-40"></div>
