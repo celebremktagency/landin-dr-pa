@@ -136,10 +136,10 @@ export default function Home() {
         <div className="absolute bottom-12 right-1/3 w-14 h-14 bg-white/13 rounded-full blur-lg z-25"></div>
         
         <div className="max-w-7xl mx-auto relative z-30">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             
             {/* Lado Esquerdo - Texto e Botão */}
-            <div className="text-left py-20 pt-40 pr-0 lg:pr-8">
+            <div className="text-left py-20 pt-40">
               <h1 className="text-3xl lg:text-4xl xl:text-5xl font-extrabold leading-[1.1] mb-8">
                 <span className="text-white block">Seu objetivo final não é apenas</span>
                 <span className="text-white block">o teste positivo.</span>
@@ -165,19 +165,18 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Lado Direito - Espaço para imagem absoluta */}
-            <div className="relative"></div>
+            {/* Lado Direito - Imagem */}
+            <div className="relative flex justify-center lg:justify-end">
+              <div className="relative h-[calc(100vh-10px)] flex items-end">
+                <Image 
+                  src={rosto} 
+                  alt="Dr. Pedro Assunção" 
+                  className="h-full w-auto object-contain object-bottom"
+                />
+              </div>
+            </div>
 
           </div>
-        </div>
-        
-        {/* Imagem posicionada absolutamente - pode alcançar o topo */}
-        <div className="absolute top-0 bottom-0 right-0 lg:right-[10%] z-40 flex items-end">
-          <Image 
-            src={rosto} 
-            alt="Dr. Pedro Assunção" 
-            className="h-full w-auto object-contain object-bottom max-h-[calc(100vh-10px)]"
-          />
         </div>
       </section>
 
@@ -259,14 +258,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Seção da Solução */}
-      <section className="py-20 px-4 relative overflow-hidden">
+      {/* Transição com gradiente */}
+      <div className="h-20 bg-gradient-to-b from-[#F5F7F5] to-[#667269]/30"></div>
+      
+      {/* Seção da Solução - FULL WIDTH */}
+      <section className="bg-gradient-to-br from-[#667269] via-[#4A5D4F] to-[#667269] py-20 relative overflow-hidden">
         {/* Spots de luz de fundo */}
         <div className="absolute top-10 left-10 w-64 h-64 bg-[#D4AF37]/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-20 w-48 h-48 bg-[#667269]/15 rounded-full blur-2xl"></div>
         
-        <div className="max-w-6xl mx-auto relative z-10">
-          <div className="bg-gradient-to-br from-[#667269] via-[#4A5D4F] to-[#667269] rounded-[30px] p-12 lg:p-16 shadow-[0_25px_70px_rgba(102,114,105,0.3)] relative overflow-hidden border border-[#D4AF37]/20">
+        <div className="max-w-6xl mx-auto px-4 relative z-10">
+          <div className="relative overflow-hidden">
             {/* Pattern de fundo tecnológico */}
             <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%2523D4AF37%22%20fill-opacity%3D%220.05%22%3E%3Cpath%20d%3D%22m0%2040c0-11.046%208.954-20%2020-20s20%208.954%2020%2020v20h-40z%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-30"></div>
             
@@ -341,14 +343,17 @@ export default function Home() {
       </section>
 
 
-      {/* About Doctor - Conheça o Dr. Pedro Assunção */}
+      {/* Transição com gradiente */}
+      <div className="h-16 bg-gradient-to-b from-[#667269] via-[#4A5D4F] to-[#F5F7F5]"></div>
+      
+      {/* About Doctor - Container menor para dinamismo */}
       <section className="py-20 px-4 relative overflow-hidden">
+        <div className="max-w-5xl mx-auto bg-gradient-to-br from-[#667269] via-[#4A5D4F] to-[#2F4A32] rounded-[40px] p-12 lg:p-16 shadow-[0_25px_70px_rgba(102,114,105,0.3)] relative overflow-hidden">
         {/* Efeitos de fundo */}
         <div className="absolute top-1/2 left-0 w-96 h-96 bg-[#667269]/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 right-0 w-64 h-64 bg-[#D4AF37]/10 rounded-full blur-2xl"></div>
         
-        <div className="max-w-7xl mx-auto relative z-10">
-          <div className="bg-gradient-to-br from-[#667269] via-[#4A5D4F] to-[#2F4A32] rounded-[30px] overflow-hidden shadow-[0_25px_70px_rgba(102,114,105,0.3)] relative border border-[#D4AF37]/20">
+          <div className="relative overflow-hidden">
             {/* Pattern tecnológico */}
             <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%2523D4AF37%22%20fill-opacity%3D%220.03%22%3E%3Ccircle%20cx%3D%2220%22%20cy%3D%2220%22%20r%3D%224%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-40"></div>
             
@@ -660,14 +665,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Clinic Section */}
-      <section className="py-20 px-4 relative overflow-hidden">
+      {/* Transição com gradiente */}
+      <div className="h-20 bg-gradient-to-b from-[#F5F7F5] to-[#667269]/30"></div>
+      
+      {/* Clinic Section - FULL WIDTH */}
+      <section className="bg-gradient-to-br from-[#667269] via-[#4A5D4F] to-[#667269] py-20 relative overflow-hidden">
         {/* Spots de luz de fundo */}
         <div className="absolute top-10 left-10 w-64 h-64 bg-[#D4AF37]/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-20 w-48 h-48 bg-[#667269]/15 rounded-full blur-2xl"></div>
         
-        <div className="max-w-7xl mx-auto relative z-10">
-          <div className="bg-gradient-to-br from-[#667269] via-[#4A5D4F] to-[#667269] rounded-[30px] p-12 lg:p-16 shadow-[0_25px_70px_rgba(102,114,105,0.3)] relative overflow-hidden border border-[#D4AF37]/20">
+        <div className="max-w-7xl mx-auto px-4 relative z-10">
+          <div className="relative overflow-hidden p-12 lg:p-16">
             {/* Pattern de fundo tecnológico */}
             <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%2523D4AF37%22%20fill-opacity%3D%220.05%22%3E%3Cpath%20d%3D%22m0%2040c0-11.046%208.954-20%2020-20s20%208.954%2020%2020v20h-40z%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-30"></div>
             
@@ -713,6 +721,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Transição com gradiente */}
+      <div className="h-16 bg-gradient-to-b from-[#667269] to-[#F5F7F5]"></div>
 
       {/* Final CTA Section */}
       <section className="py-20 px-4">
