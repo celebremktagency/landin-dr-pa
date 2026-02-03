@@ -66,30 +66,42 @@ export default function Home() {
       {/* Header - Efeito Espelho com Blur */}
       <header className="bg-white/10 backdrop-blur-md py-6 px-4 absolute top-0 left-0 right-0 z-50 border-b border-white/20">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 items-center">
-            
-            {/* Contato Esquerda */}
-            <div className="flex items-center justify-center lg:justify-start gap-3 text-white/90 order-2 lg:order-1">
-              <div className="w-8 h-8 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                <Phone className="w-4 h-4 text-white" />
-              </div>
-              <span className="font-semibold drop-shadow-lg">(83) 99627.1000</span>
-            </div>
-            
-            {/* Logo Centro */}
-            <div className="h-16 flex items-center justify-center order-1 lg:order-2">
+          
+          {/* Mobile: Apenas Logo */}
+          <div className="block lg:hidden">
+            <div className="h-16 flex items-center justify-center">
               <Image src={logo} alt="Dr. Pedro Assunção" width={140} height={56} className="object-contain max-h-14 drop-shadow-lg" />
             </div>
-            
-            {/* Localização Direita */}
-            <div className="flex items-center justify-center lg:justify-end gap-3 text-white/90 order-3">
-              <div className="w-8 h-8 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                <MapPin className="w-4 h-4 text-white" />
-              </div>
-              <span className="text-sm drop-shadow-lg">João Pessoa - PB</span>
-            </div>
-            
           </div>
+
+          {/* Desktop: Layout completo */}
+          <div className="hidden lg:block">
+            <div className="grid grid-cols-3 gap-4 items-center">
+              
+              {/* Contato Esquerda */}
+              <div className="flex items-center justify-start gap-3 text-white/90">
+                <div className="w-8 h-8 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                  <Phone className="w-4 h-4 text-white" />
+                </div>
+                <span className="font-semibold drop-shadow-lg">(83) 99627.1000</span>
+              </div>
+              
+              {/* Logo Centro */}
+              <div className="h-16 flex items-center justify-center">
+                <Image src={logo} alt="Dr. Pedro Assunção" width={140} height={56} className="object-contain max-h-14 drop-shadow-lg" />
+              </div>
+              
+              {/* Localização Direita */}
+              <div className="flex items-center justify-end gap-3 text-white/90">
+                <div className="w-8 h-8 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                  <MapPin className="w-4 h-4 text-white" />
+                </div>
+                <span className="text-sm drop-shadow-lg">João Pessoa - PB</span>
+              </div>
+              
+            </div>
+          </div>
+
         </div>
       </header>
 
@@ -137,18 +149,34 @@ export default function Home() {
         
         <div className="max-w-7xl mx-auto relative z-30">
           
-          {/* Mobile: Stack layout (texto em cima, imagem embaixo) */}
-          <div className="block lg:hidden">
-            {/* Texto */}
-            <div className="text-left py-20 pt-40 px-4">
+          {/* Mobile: Photo background with green overlay and text on top */}
+          <div className="block lg:hidden relative">
+            
+            {/* Background Image */}
+            <div className="absolute inset-0 z-0">
+              <Image 
+                src={rosto} 
+                alt="Dr. Pedro Assunção" 
+                fill
+                className="object-cover object-center"
+                priority
+              />
+            </div>
+            
+            {/* Green Gradient Overlay */}
+            <div className="absolute inset-0 z-10 bg-gradient-to-b from-[#667269]/95 via-[#667269]/85 to-[#667269]/60"></div>
+            <div className="absolute inset-0 z-10 bg-gradient-to-r from-[#4A5D4F]/90 via-[#667269]/70 to-[#667269]/40"></div>
+            
+            {/* Content over the overlay */}
+            <div className="relative z-20 min-h-screen flex flex-col justify-center text-left py-20 pt-40 px-4">
               <h1 className="text-2xl sm:text-3xl font-extrabold leading-[1.1] mb-6">
-                <span className="text-white block font-black tracking-tight">Seu objetivo final não é apenas</span>
-                <span className="text-white block font-black tracking-tight">o teste positivo.</span>
-                <span className="text-white block bg-gradient-to-r from-[#D4AF37] to-[#F2D06B] bg-clip-text text-transparent font-bold tracking-wide">É ter o seu bebê no colo</span>
-                <span className="text-white/90 block text-xl sm:text-2xl font-extralight italic tracking-wider">com saúde.</span>
+                <span className="text-white block font-black tracking-tight drop-shadow-lg">Seu objetivo final não é apenas</span>
+                <span className="text-white block font-black tracking-tight drop-shadow-lg">o teste positivo.</span>
+                <span className="text-white block bg-gradient-to-r from-[#D4AF37] to-[#F2D06B] bg-clip-text text-transparent font-bold tracking-wide drop-shadow-lg">É ter o seu bebê no colo</span>
+                <span className="text-white/95 block text-xl sm:text-2xl font-extralight italic tracking-wider drop-shadow-lg">com saúde.</span>
               </h1>
               
-              <p className="text-base sm:text-lg text-white/95 leading-relaxed mb-6 font-light">
+              <p className="text-base sm:text-lg text-white/95 leading-relaxed mb-8 font-light drop-shadow-md">
                 Sei que a jornada da maternidade pode trazer <span className="font-medium italic">dúvidas e ansiedades</span>. Aqui em <span className="font-bold text-[#D4AF37] tracking-wide">João Pessoa</span>, ofereço um espaço seguro de escuta e uma <span className="font-semibold underline decoration-[#D4AF37]/50">investigação médica minuciosa</span> para maximizar as suas chances de ter seu bebê no colo.
               </p>
               
@@ -165,14 +193,6 @@ export default function Home() {
               </div>
             </div>
             
-            {/* Imagem */}
-            <div className="relative h-[60vh] sm:h-[70vh] flex items-center justify-center px-4">
-              <Image 
-                src={rosto} 
-                alt="Dr. Pedro Assunção" 
-                className="h-full w-auto object-contain object-center"
-              />
-            </div>
           </div>
 
           {/* Desktop: Float layout (lado a lado) */}
