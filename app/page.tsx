@@ -149,11 +149,11 @@ export default function Home() {
         
         <div className="max-w-7xl mx-auto relative z-30">
           
-          {/* Mobile: Photo background with green overlay and text on top */}
-          <div className="block lg:hidden relative">
+          {/* Mobile: Image + Text layout with bottom fade */}
+          <div className="block lg:hidden">
             
-            {/* Background Image */}
-            <div className="absolute inset-0 z-0">
+            {/* Image container */}
+            <div className="relative h-[60vh] sm:h-[70vh]">
               <Image 
                 src={rosto} 
                 alt="Dr. Pedro Assunção" 
@@ -161,25 +161,21 @@ export default function Home() {
                 className="object-cover object-center"
                 priority
               />
+              
+              {/* Subtle bottom fade gradient ONLY on bottom edge of image */}
+              <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#667269]/80 to-transparent z-10"></div>
             </div>
             
-            {/* Green Gradient Overlay */}
-            <div className="absolute inset-0 z-10 bg-gradient-to-b from-[#667269]/95 via-[#667269]/85 to-[#667269]/60"></div>
-            <div className="absolute inset-0 z-10 bg-gradient-to-r from-[#4A5D4F]/90 via-[#667269]/70 to-[#667269]/40"></div>
-            
-            {/* Bottom fade gradient to prevent abrupt cutoff */}
-            <div className="absolute bottom-0 left-0 right-0 h-32 z-15 bg-gradient-to-t from-[#F5F7F5] via-[#F5F7F5]/90 to-transparent"></div>
-            
-            {/* Content over the overlay */}
-            <div className="relative z-20 min-h-screen flex flex-col justify-center text-left py-20 pt-40 px-4">
+            {/* Green section with text */}
+            <div className="bg-gradient-to-br from-[#667269] via-[#4A5D4F] to-[#667269] py-12 px-4 relative">
               <h1 className="text-2xl sm:text-3xl font-extrabold leading-[1.1] mb-6">
-                <span className="text-white block font-black tracking-tight drop-shadow-lg">Seu objetivo final não é apenas</span>
-                <span className="text-white block font-black tracking-tight drop-shadow-lg">o teste positivo.</span>
-                <span className="text-white block bg-gradient-to-r from-[#D4AF37] to-[#F2D06B] bg-clip-text text-transparent font-bold tracking-wide drop-shadow-lg">É ter o seu bebê no colo</span>
-                <span className="text-white/95 block text-xl sm:text-2xl font-extralight italic tracking-wider drop-shadow-lg">com saúde.</span>
+                <span className="text-white block font-black tracking-tight">Seu objetivo final não é apenas</span>
+                <span className="text-white block font-black tracking-tight">o teste positivo.</span>
+                <span className="text-white block bg-gradient-to-r from-[#D4AF37] to-[#F2D06B] bg-clip-text text-transparent font-bold tracking-wide">É ter o seu bebê no colo</span>
+                <span className="text-white/95 block text-xl sm:text-2xl font-extralight italic tracking-wider">com saúde.</span>
               </h1>
               
-              <p className="text-base sm:text-lg text-white/95 leading-relaxed mb-8 font-light drop-shadow-md">
+              <p className="text-base sm:text-lg text-white/95 leading-relaxed mb-8 font-light">
                 Sei que a jornada da maternidade pode trazer <span className="font-medium italic">dúvidas e ansiedades</span>. Aqui em <span className="font-bold text-[#D4AF37] tracking-wide">João Pessoa</span>, ofereço um espaço seguro de escuta e uma <span className="font-semibold underline decoration-[#D4AF37]/50">investigação médica minuciosa</span> para maximizar as suas chances de ter seu bebê no colo.
               </p>
               
