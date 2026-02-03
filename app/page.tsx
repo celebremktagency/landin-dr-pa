@@ -167,6 +167,9 @@ export default function Home() {
             <div className="absolute inset-0 z-10 bg-gradient-to-b from-[#667269]/95 via-[#667269]/85 to-[#667269]/60"></div>
             <div className="absolute inset-0 z-10 bg-gradient-to-r from-[#4A5D4F]/90 via-[#667269]/70 to-[#667269]/40"></div>
             
+            {/* Bottom fade gradient to prevent abrupt cutoff */}
+            <div className="absolute bottom-0 left-0 right-0 h-32 z-15 bg-gradient-to-t from-[#F5F7F5] via-[#F5F7F5]/90 to-transparent"></div>
+            
             {/* Content over the overlay */}
             <div className="relative z-20 min-h-screen flex flex-col justify-center text-left py-20 pt-40 px-4">
               <h1 className="text-2xl sm:text-3xl font-extrabold leading-[1.1] mb-6">
