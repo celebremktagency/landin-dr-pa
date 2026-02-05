@@ -106,68 +106,41 @@ export default function Home() {
       </header>
 
 
-      {/* Main Hero Section - Layout 2 colunas com fundo */}
-      <section className="px-4 relative overflow-hidden pt-24" style={{height: 'calc(100vh - 10px)'}}>
-        {/* Camada de cor verde como sombreado */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#667269] to-[#4A5A4D]"></div>
+      {/* Main Hero Section - Layout 2 colunas Vc n com fundo */}
+      <section className="px-4 relative overflow-hidden pt-24 min-h-screen bg-gradient-to-br from-[#667269] to-[#4A5A4D]">
+        {/* Fundo limpo - igual ao quadrado da imagem */}
         
-        {/* Imagem de fundo com 30% de opacidade */}
-        <div className="absolute inset-0">
-          <Image 
-            src={fundo} 
-            alt="Background" 
-            fill
-            className="object-cover opacity-15"
-            priority
-          />
-        </div>
+        {/* Spots de luz - apenas no desktop */}
+        <div className="hidden lg:block absolute top-16 left-16 w-40 h-40 bg-white/6 rounded-full blur-3xl z-10"></div>
+        <div className="hidden lg:block absolute bottom-32 left-40 w-32 h-32 bg-white/8 rounded-full blur-2xl z-10"></div>
+        <div className="hidden lg:block absolute top-1/2 left-10 w-20 h-20 bg-white/4 rounded-full blur-xl z-10"></div>
         
-        {/* Gradient verde sobrepondo - MUITO FORTE na esquerda */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#2F4A32] from-0% from-[#3A5A3D] from-15% via-[#4A5D4F] via-35% via-[#667269]/90 via-55% to-transparent to-70% z-20"></div>
+        {/* Brilhos brancos adicionais - apenas desktop */}
+        <div className="hidden lg:block absolute top-24 right-32 w-28 h-28 bg-white/7 rounded-full blur-2xl z-10"></div>
+        <div className="hidden lg:block absolute bottom-40 right-16 w-36 h-36 bg-white/5 rounded-full blur-3xl z-10"></div>
+        <div className="hidden lg:block absolute top-1/4 right-1/4 w-24 h-24 bg-white/6 rounded-full blur-xl z-10"></div>
         
-        {/* Camada adicional de verde escuro na esquerda */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1A2F1D]/80 from-0% to-transparent to-40% z-21"></div>
-        
-        {/* Camada adicional de brilho */}
-        <div className="absolute inset-0 bg-gradient-to-br from-white/15 via-transparent to-transparent z-25"></div>
-        
-        {/* Spots de luz mais intensos */}
-        <div className="absolute top-16 left-16 w-40 h-40 bg-white/8 rounded-full blur-3xl z-25"></div>
-        <div className="absolute bottom-32 left-40 w-32 h-32 bg-white/12 rounded-full blur-2xl z-25"></div>
-        <div className="absolute top-1/2 left-10 w-20 h-20 bg-white/6 rounded-full blur-xl z-25"></div>
-        
-        {/* Brilhos brancos adicionais */}
-        <div className="absolute top-24 right-32 w-28 h-28 bg-white/10 rounded-full blur-2xl z-25"></div>
-        <div className="absolute bottom-40 right-16 w-36 h-36 bg-white/7 rounded-full blur-3xl z-25"></div>
-        <div className="absolute top-1/3 right-1/4 w-24 h-24 bg-white/8 rounded-full blur-xl z-25"></div>
-        <div className="absolute top-2/3 left-1/3 w-20 h-20 bg-white/9 rounded-full blur-2xl z-25"></div>
-        <div className="absolute bottom-20 left-1/2 w-16 h-16 bg-white/11 rounded-full blur-xl z-25"></div>
-        
-        {/* Pequenos pontos de luz */}
-        <div className="absolute top-12 left-1/2 w-12 h-12 bg-white/15 rounded-full blur-lg z-25"></div>
-        <div className="absolute bottom-12 right-1/3 w-14 h-14 bg-white/13 rounded-full blur-lg z-25"></div>
-        
-        <div className="max-w-7xl mx-auto relative z-30">
+        <div className="max-w-7xl mx-auto relative z-40">
           
-          {/* Mobile: Image + Text layout with bottom fade */}
-          <div className="block lg:hidden">
+          {/* Mobile: Flex-col layout */}
+          <div className="flex flex-col lg:hidden">
             
-            {/* Image container */}
-            <div className="relative h-[60vh] sm:h-[70vh]">
+            {/* Image container - com fundo do gradiente */}
+            <div className="relative min-h-[500px] overflow-hidden bg-gradient-to-br from-[#667269] to-[#4A5A4D]">
               <Image 
                 src={rosto} 
                 alt="Dr. Pedro Assunção" 
                 fill
-                className="object-cover object-center"
+                className="object-contain"
+                style={{objectPosition: 'bottom'}}
                 priority
               />
-              
-              {/* Subtle bottom fade gradient ONLY on bottom edge of image */}
-              <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#667269]/80 to-transparent z-10"></div>
+              {/* Fade vertical - mais embaixo ainda (5px a mais) */}
+              <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-[#4A5D4F] via-[#4A5D4F]/90 via-75% to-transparent"></div>
             </div>
             
-            {/* Green section with text */}
-            <div className="bg-gradient-to-br from-[#667269] via-[#4A5D4F] to-[#667269] py-12 px-4 relative">
+            {/* Text section - fundo verde da paleta */}
+            <div className="bg-[#4A5D4F] py-8 px-4 relative">
               <h1 className="text-2xl sm:text-3xl font-extrabold leading-[1.1] mb-6">
                 <span className="text-white block font-black tracking-tight">Seu objetivo final não é apenas</span>
                 <span className="text-white block font-black tracking-tight">o teste positivo.</span>
@@ -181,25 +154,23 @@ export default function Home() {
               
               <div className="mb-8">
                 <div className="group relative inline-block w-full sm:w-auto">
-                  <div className="absolute -inset-1 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 rounded-2xl blur opacity-70 group-hover:opacity-100 transition duration-300"></div>
-                  <div className="relative bg-gradient-to-r from-[#D4AF37] via-[#F2D06B] to-[#E6C547] rounded-2xl px-6 py-4 shadow-[0_10px_40px_rgba(212,175,55,0.4)] hover:shadow-[0_15px_50px_rgba(212,175,55,0.6)] transform hover:scale-105 transition-all duration-300">
+                  <div className="relative bg-gradient-to-b from-[#F2D06B] to-[#D4AF37] rounded-2xl px-6 py-4 shadow-[0_0_20px_rgba(212,175,55,0.3)] hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] transform hover:scale-105 transition-all duration-300">
                     <a href="https://wa.me/5583996271000?text=Olá%2C%20gostaria%20de%20mais%20informações%21%20Cliquei%20no%20link%3A%20Agende%20sua%20avaliação%20diagnóstica%21" target="_blank" rel="noopener noreferrer" 
-                       className="text-[#667269] font-bold text-sm sm:text-base flex items-center justify-center gap-2">
+                       className="text-[#4A5D4F] font-bold text-sm sm:text-base flex items-center justify-center gap-2">
                       <span className="drop-shadow-sm text-center">QUERO AGENDAR UMA AVALIAÇÃO DIAGNÓSTICA</span>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-            
           </div>
 
-          {/* Desktop: Float layout (lado a lado) */}
-          <div className="hidden lg:block">
-            <div className="clearfix">
-              
-              {/* Lado Esquerdo - Texto e Botão */}
-              <div className="float-left w-1/2 text-left py-20 pt-40 pr-8">
+          {/* Desktop: Grid layout - imagem encostando na parte inferior */}
+          <div className="hidden lg:grid lg:grid-cols-2 lg:gap-0 lg:items-stretch lg:min-h-screen">
+            
+            {/* Coluna Esquerda - Texto acompanhando até encostar */}
+            <div className="relative flex flex-col justify-center p-8 xl:p-12 z-20">
+              <div className="relative z-10">
                 <h1 className="text-3xl lg:text-4xl xl:text-5xl font-extrabold leading-[1.1] mb-8">
                   <span className="text-white block font-black tracking-tight">Seu objetivo final não é apenas</span>
                   <span className="text-white block font-black tracking-tight">o teste positivo.</span>
@@ -207,35 +178,33 @@ export default function Home() {
                   <span className="text-white/90 block text-2xl lg:text-3xl xl:text-4xl font-extralight italic tracking-wider">com saúde.</span>
                 </h1>
                 
-                <p className="text-lg lg:text-xl text-white/95 leading-relaxed mb-8 max-w-2xl font-light">
+                <p className="text-lg lg:text-xl text-white/95 leading-relaxed mb-8 font-light">
                   Sei que a jornada da maternidade pode trazer <span className="font-medium italic">dúvidas e ansiedades</span>. Aqui em <span className="font-bold text-[#D4AF37] tracking-wide">João Pessoa</span>, ofereço um espaço seguro de escuta e uma <span className="font-semibold underline decoration-[#D4AF37]/50">investigação médica minuciosa</span> para maximizar as suas chances de ter seu bebê no colo.
                 </p>
                 
-                <div className="space-y-6">
-                  <div className="group relative inline-block">
-                    <div className="absolute -inset-1 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 rounded-2xl blur opacity-70 group-hover:opacity-100 transition duration-300"></div>
-                    <div className="relative bg-gradient-to-r from-[#D4AF37] via-[#F2D06B] to-[#E6C547] rounded-2xl px-8 py-5 shadow-[0_10px_40px_rgba(212,175,55,0.4)] hover:shadow-[0_15px_50px_rgba(212,175,55,0.6)] transform hover:scale-105 transition-all duration-300">
-                      <a href="https://wa.me/5583996271000?text=Olá%2C%20gostaria%20de%20mais%20informações%21%20Cliquei%20no%20link%3A%20Agende%20sua%20avaliação%20diagnóstica%21" target="_blank" rel="noopener noreferrer" 
-                         className="text-[#667269] font-bold text-lg flex items-center justify-center gap-3">
-                        <span className="drop-shadow-sm">QUERO AGENDAR UMA AVALIAÇÃO DIAGNÓSTICA</span>
-                      </a>
-                    </div>
+                <div className="group relative inline-block">
+                  <div className="relative bg-gradient-to-b from-[#F2D06B] to-[#D4AF37] rounded-2xl px-8 py-5 shadow-[0_0_20px_rgba(212,175,55,0.3)] hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] transform hover:scale-105 transition-all duration-300">
+                    <a href="https://wa.me/5583996271000?text=Olá%2C%20gostaria%20de%20mais%20informações%21%20Cliquei%20no%20link%3A%20Agende%20sua%20avaliação%20diagnóstica%21" target="_blank" rel="noopener noreferrer" 
+                       className="text-[#4A5D4F] font-bold text-lg flex items-center justify-center gap-3">
+                      <span className="drop-shadow-sm">QUERO AGENDAR UMA AVALIAÇÃO DIAGNÓSTICA</span>
+                    </a>
                   </div>
                 </div>
               </div>
-
-              {/* Lado Direito - Imagem */}
-              <div className="float-right w-1/2 relative flex justify-end">
-                <div className="relative h-[calc(100vh+150px)] flex items-center">
-                  <Image 
-                    src={rosto} 
-                    alt="Dr. Pedro Assunção" 
-                    className="h-full w-auto object-contain object-center scale-125"
-                  />
-                </div>
-              </div>
-
             </div>
+
+            {/* Coluna Direita - Imagem sem cortar muito */}
+            <div className="relative overflow-hidden">
+              <Image 
+                src={rosto} 
+                alt="Dr. Pedro Assunção" 
+                fill
+                className="object-contain scale-100"
+                style={{objectPosition: 'bottom center'}}
+                priority
+              />
+            </div>
+
           </div>
 
         </div>
