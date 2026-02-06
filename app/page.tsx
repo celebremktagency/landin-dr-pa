@@ -57,7 +57,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#F5F7F5] font-['Inter'] text-[#2C3A2E]" 
+    <div className="min-h-screen bg-[#F5F7F5] font-[family-name:var(--font-inter)] text-[#2C3A2E]" 
          style={{
            backgroundImage: `radial-gradient(circle at 1px 1px, rgba(184,197,184,0.3) 1px, transparent 0)`,
            backgroundSize: '20px 20px'
@@ -141,7 +141,7 @@ export default function Home() {
             
             {/* Text section - SEM FUNDO - texto ainda mais em cima */}
             <div className="py-6 px-4 relative -mt-28 z-40">
-              <h1 className="text-2xl sm:text-3xl font-extrabold leading-[1.1] mb-6 animate-in slide-in-from-bottom-8 duration-1000 delay-200">
+              <h1 className="text-2xl sm:text-3xl font-extrabold leading-[1.1] mb-6 font-[family-name:var(--font-poppins)] animate-in slide-in-from-bottom-8 duration-1000 delay-200">
                 <span className="text-white block font-black tracking-tight">Seu objetivo final não é apenas</span>
                 <span className="text-white block font-black tracking-tight">o teste positivo.</span>
                 <span className="text-white block bg-gradient-to-r from-[#D4AF37] to-[#F2D06B] bg-clip-text text-transparent font-bold tracking-wide">É ter o seu bebê no colo</span>
@@ -171,7 +171,7 @@ export default function Home() {
             {/* Coluna Esquerda - Texto e botão mais embaixo */}
             <div className="relative flex flex-col justify-end pb-16 p-8 xl:p-12 z-20">
               <div className="relative z-10">
-                <h1 className="text-3xl lg:text-4xl xl:text-5xl font-extrabold leading-[1.1] mb-8 animate-in slide-in-from-left-10 duration-1000 delay-300">
+                <h1 className="text-3xl lg:text-4xl xl:text-5xl font-extrabold leading-[1.1] mb-8 font-[family-name:var(--font-poppins)] animate-in slide-in-from-left-10 duration-1000 delay-300">
                   <span className="text-white block font-black tracking-tight">Seu objetivo final não é apenas</span>
                   <span className="text-white block font-black tracking-tight">o teste positivo.</span>
                   <span className="text-white block bg-gradient-to-r from-[#D4AF37] to-[#F2D06B] bg-clip-text text-transparent font-bold tracking-wide">É ter o seu bebê no colo</span>
