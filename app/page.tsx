@@ -107,7 +107,7 @@ export default function Home() {
 
 
       {/* Main Hero Section - Layout 2 colunas Vc n com fundo */}
-      <section className="px-4 relative overflow-hidden pt-24 min-h-screen bg-gradient-to-br from-[#667269] to-[#4A5A4D]">
+      <section className="px-4 relative overflow-hidden pt-8 lg:pt-24 bg-[#667269]">
         {/* Fundo limpo - igual ao quadrado da imagem */}
         
         {/* Spots de luz - apenas no desktop */}
@@ -120,41 +120,41 @@ export default function Home() {
         <div className="hidden lg:block absolute bottom-40 right-16 w-36 h-36 bg-white/5 rounded-full blur-3xl z-10"></div>
         <div className="hidden lg:block absolute top-1/4 right-1/4 w-24 h-24 bg-white/6 rounded-full blur-xl z-10"></div>
         
-        <div className="max-w-7xl mx-auto relative z-40">
+        <div className="max-w-7xl mx-auto relative z-40 scroll-hidden">
           
           {/* Mobile: Flex-col layout */}
-          <div className="flex flex-col lg:hidden">
+          <div className="flex flex-col lg:hidden scroll-slide-left">
             
-            {/* Image container - com fundo do gradiente */}
-            <div className="relative min-h-[500px] overflow-hidden bg-gradient-to-br from-[#667269] to-[#4A5A4D]">
+            {/* Image container - fundo igual à seção Hero */}
+            <div className="relative min-h-[500px] overflow-hidden bg-[#667269] animate-in fade-in duration-1000">
               <Image 
                 src={rosto} 
                 alt="Dr. Pedro Assunção" 
                 fill
                 className="object-contain"
-                style={{objectPosition: 'bottom'}}
+                style={{objectPosition: 'center'}}
                 priority
               />
-              {/* Fade vertical - mais embaixo ainda (5px a mais) */}
-              <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-[#4A5D4F] via-[#4A5D4F]/90 via-75% to-transparent"></div>
+              {/* Gradiente com intensidade certa - só cor clara */}
+              <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-[#667269] from-0% via-[#667269] via-40% via-[#667269] via-70% to-transparent to-100% z-10"></div>
             </div>
             
-            {/* Text section - fundo verde da paleta */}
-            <div className="bg-[#4A5D4F] py-8 px-4 relative">
-              <h1 className="text-2xl sm:text-3xl font-extrabold leading-[1.1] mb-6">
+            {/* Text section - SEM FUNDO - texto ainda mais em cima */}
+            <div className="py-6 px-4 relative -mt-28 z-40">
+              <h1 className="text-2xl sm:text-3xl font-extrabold leading-[1.1] mb-6 animate-in slide-in-from-bottom-8 duration-1000 delay-200">
                 <span className="text-white block font-black tracking-tight">Seu objetivo final não é apenas</span>
                 <span className="text-white block font-black tracking-tight">o teste positivo.</span>
                 <span className="text-white block bg-gradient-to-r from-[#D4AF37] to-[#F2D06B] bg-clip-text text-transparent font-bold tracking-wide">É ter o seu bebê no colo</span>
                 <span className="text-white/95 block text-xl sm:text-2xl font-extralight italic tracking-wider">com saúde.</span>
               </h1>
               
-              <p className="text-base sm:text-lg text-white/95 leading-relaxed mb-8 font-light">
+              <p className="text-base sm:text-lg text-white/95 leading-relaxed mb-8 font-light animate-in slide-in-from-bottom-8 duration-1000 delay-400">
                 Sei que a jornada da maternidade pode trazer <span className="font-medium italic">dúvidas e ansiedades</span>. Aqui em <span className="font-bold text-[#D4AF37] tracking-wide">João Pessoa</span>, ofereço um espaço seguro de escuta e uma <span className="font-semibold underline decoration-[#D4AF37]/50">investigação médica minuciosa</span> para maximizar as suas chances de ter seu bebê no colo.
               </p>
               
               <div className="mb-8">
                 <div className="group relative inline-block w-full sm:w-auto">
-                  <div className="relative bg-gradient-to-b from-[#F2D06B] to-[#D4AF37] rounded-2xl px-6 py-4 shadow-[0_0_20px_rgba(212,175,55,0.3)] hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] transform hover:scale-105 transition-all duration-300">
+                  <div className="relative bg-gradient-to-b from-[#F2D06B] to-[#D4AF37] rounded-2xl px-6 py-4 shadow-[0_0_20px_rgba(212,175,55,0.3)] hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] transform hover:scale-105 transition-all duration-300 animate-in slide-in-from-bottom-8 duration-1000 delay-600">
                     <a href="https://wa.me/5583996271000?text=Olá%2C%20gostaria%20de%20mais%20informações%21%20Cliquei%20no%20link%3A%20Agende%20sua%20avaliação%20diagnóstica%21" target="_blank" rel="noopener noreferrer" 
                        className="text-[#4A5D4F] font-bold text-sm sm:text-base flex items-center justify-center gap-2">
                       <span className="drop-shadow-sm text-center">QUERO AGENDAR UMA AVALIAÇÃO DIAGNÓSTICA</span>
@@ -165,24 +165,24 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Desktop: Grid layout - imagem encostando na parte inferior */}
-          <div className="hidden lg:grid lg:grid-cols-2 lg:gap-0 lg:items-stretch lg:min-h-screen">
+          {/* Desktop: Grid layout - altura adequada ao conteúdo */}
+          <div className="hidden lg:grid lg:grid-cols-2 lg:gap-0 lg:items-stretch scroll-hidden">
             
-            {/* Coluna Esquerda - Texto acompanhando até encostar */}
-            <div className="relative flex flex-col justify-center p-8 xl:p-12 z-20">
+            {/* Coluna Esquerda - Texto e botão mais embaixo */}
+            <div className="relative flex flex-col justify-end pb-16 p-8 xl:p-12 z-20">
               <div className="relative z-10">
-                <h1 className="text-3xl lg:text-4xl xl:text-5xl font-extrabold leading-[1.1] mb-8">
+                <h1 className="text-3xl lg:text-4xl xl:text-5xl font-extrabold leading-[1.1] mb-8 animate-in slide-in-from-left-10 duration-1000 delay-300">
                   <span className="text-white block font-black tracking-tight">Seu objetivo final não é apenas</span>
                   <span className="text-white block font-black tracking-tight">o teste positivo.</span>
                   <span className="text-white block bg-gradient-to-r from-[#D4AF37] to-[#F2D06B] bg-clip-text text-transparent font-bold tracking-wide">É ter o seu bebê no colo</span>
                   <span className="text-white/90 block text-2xl lg:text-3xl xl:text-4xl font-extralight italic tracking-wider">com saúde.</span>
                 </h1>
                 
-                <p className="text-lg lg:text-xl text-white/95 leading-relaxed mb-8 font-light">
+                <p className="text-lg lg:text-xl text-white/95 leading-relaxed mb-8 font-light animate-in slide-in-from-left-10 duration-1000 delay-500">
                   Sei que a jornada da maternidade pode trazer <span className="font-medium italic">dúvidas e ansiedades</span>. Aqui em <span className="font-bold text-[#D4AF37] tracking-wide">João Pessoa</span>, ofereço um espaço seguro de escuta e uma <span className="font-semibold underline decoration-[#D4AF37]/50">investigação médica minuciosa</span> para maximizar as suas chances de ter seu bebê no colo.
                 </p>
                 
-                <div className="group relative inline-block">
+                <div className="group relative inline-block animate-in slide-in-from-left-10 duration-1000 delay-700">
                   <div className="relative bg-gradient-to-b from-[#F2D06B] to-[#D4AF37] rounded-2xl px-8 py-5 shadow-[0_0_20px_rgba(212,175,55,0.3)] hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] transform hover:scale-105 transition-all duration-300">
                     <a href="https://wa.me/5583996271000?text=Olá%2C%20gostaria%20de%20mais%20informações%21%20Cliquei%20no%20link%3A%20Agende%20sua%20avaliação%20diagnóstica%21" target="_blank" rel="noopener noreferrer" 
                        className="text-[#4A5D4F] font-bold text-lg flex items-center justify-center gap-3">
@@ -199,8 +199,8 @@ export default function Home() {
                 src={rosto} 
                 alt="Dr. Pedro Assunção" 
                 fill
-                className="object-contain scale-100"
-                style={{objectPosition: 'bottom center'}}
+                className="object-contain scale-110 animate-in slide-in-from-right-10 duration-1000"
+                style={{objectPosition: 'center bottom'}}
                 priority
               />
             </div>
