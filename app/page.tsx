@@ -328,11 +328,13 @@ export default function Home() {
                   
                   <div className="space-y-6 text-white/90 leading-relaxed">
                     <p className="text-lg font-light">
-                      <span className="text-[#D4AF37] font-medium">Ginecologista e Obstetra</span> formado pela Universidade Federal da Paraíba (UFPB), com especialização em Reprodução Humana pelo Hospital das Clínicas da Universidade de São Paulo (HC-USP).
+                      <span className="text-[#D4AF37] font-medium">Médico Ginecologista e Obstetra</span><br />
+                      <span className="text-white/80 text-base">CRM-PB 14388 • RQE 9710</span><br /><br />
+                      Graduado em Medicina pela Faculdade de Ciências Médicas da Paraíba (FCM-PB), com Residência Médica em Ginecologia e Obstetrícia pela Universidade Federal da Paraíba (HULW/UFPB).
                     </p>
                     
                     <p className="text-lg font-light">
-                      Pós-graduando em <span className="text-[#D4AF37] font-semibold">Medicina Fetal</span> pela Universidade de São Paulo (USP), com experiência em ultrassonografia obstétrica e morfológica.
+                      Pós-Graduação Lato Sensu em Ginecologia e Obstetrícia pela Faculdade Global (FG), com experiência em ultrassonografia obstétrica e morfológica.
                     </p>
                     
                     <p className="text-lg font-light">
@@ -386,7 +388,7 @@ export default function Home() {
                 <Heart className="w-8 h-8 text-[#667269]" />
               </div>
               <h3 className="text-2xl font-bold text-[#667269] mb-4 relative z-10">
-                Foco em Fertilidade e Pré-Concepção
+                Foco em Reprodução Humana e Pré-Concepção
               </h3>
               <p className="text-[#D4AF37] mb-4 font-semibold relative z-10">
                 Para quem está tentando engravidar ou deseja se planejar.
@@ -709,7 +711,7 @@ export default function Home() {
                 <Image src={logo} alt="Dr. Pedro Assunção" width={140} height={56} className="object-contain max-h-14 filter brightness-200" />
               </div>
               <p className="text-white/80 leading-relaxed">
-                Medicina da Fertilidade com cuidado humano e científico para realizar o sonho da maternidade.
+                Medicina Reprodutiva com cuidado humano e científico para realizar o sonho da maternidade.
               </p>
             </div>
 
@@ -750,7 +752,8 @@ export default function Home() {
           
           {/* Linha divisória e nome */}
           <div className="border-t border-[#D4AF37]/30 mt-12 pt-8 text-center">
-            <p className="text-xl font-bold text-white mb-3">Dr. Pedro Assunção</p>
+            <p className="text-xl font-bold text-white mb-1">Dr. Pedro Paulo Assunção da Silva</p>
+            <p className="text-white/80 text-sm mb-3">CRM-PB 14388 • RQE 9710</p>
             <p className="text-white/60">© 2026 - Dr. Pedro Assunção | Todos os direitos reservados</p>
           </div>
         </div>
