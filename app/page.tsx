@@ -1,16 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import clinica1 from './clinica1.png';
-import clinica2 from './clinica2.png';
-import clinica3 from './clinica3.png';
-import Depoimento1 from './Depoimento1.png';
-import Depoimento2 from './Depoimento2.png';
-import fotoSorrindo from './fotoSorrindo.jpeg';
-import rosto from './rosto.png';
-import bebeNascendo from './bebeNscendo.jpeg';
-import logo from './Logo.png';
-import fundo from './fundo.jpeg';
+import clinica1 from './clinica1.webp';
+import clinica2 from './clinica2.webp';
+import clinica3 from './clinica3.webp';
+import Depoimento1 from './Depoimento1.webp';
+import Depoimento2 from './Depoimento2.webp';
+import fotoSorrindo from './fotoSorrindo.webp';
+import rosto from './rosto.webp';
+import bebeNascendo from './bebeNscendo.webp';
+import logo from './Logo.webp';
+import fundo from './fundo.webp';
 import { useEffect } from "react";
 import { 
   Heart, 
@@ -334,7 +334,7 @@ export default function Home() {
                     </p>
                     
                     <p className="text-lg font-light">
-                      Pós-Graduação Lato Sensu em Ginecologia e Obstetrícia pela Faculdade Global (FG), com experiência em ultrassonografia obstétrica e morfológica.
+                      Pós-Graduação Lato Sensu em Ginecologia e Obstetrícia pela Faculdade Global (FG).
                     </p>
                     
                     <p className="text-lg font-light">

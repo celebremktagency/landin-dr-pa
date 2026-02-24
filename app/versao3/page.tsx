@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import foto1 from '../foto1.png';
-import foto2 from '../foto2.png';
-import foto3 from '../foto3.png';
-import logo from '../Logo.png';
+import foto1 from '../foto1.webp';
+import foto2 from '../foto2.webp';
+import foto3 from '../foto3.webp';
+import logo from '../Logo.webp';
 import { useEffect } from "react";
 import { 
   Heart, 
